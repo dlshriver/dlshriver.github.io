@@ -6,7 +6,7 @@
 </head>
 
 <body ng-controller="MainController as main">
-	<div ng-repeat="project in main.projects">
+	<div ng-repeat="project in projects">
 		<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
 		<p>{{project.description}}</p>
 	</div>

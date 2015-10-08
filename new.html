@@ -26,11 +26,16 @@
 			<div class="row" ng-show="projects" ng-cloak>
 				<div class="col-md-4 col-sm-6" ng-repeat="project in (filteredProjects = (projects | filter:query))">
 					<div class=" panel panel-default">
-						<div class="panel-heading project-name">
-							<h3><a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a></h3>
-						</div>
+						<a ng-href="{{project.url}}">
+							<div class="panel-heading project-name">
+								<h3 class="panel-title">{{project.name}}</h3>
+							</div>
+						</a>
 						<div class="panel-body project-description">
 							<p>{{project.description}}</p>
+						</div>
+						<div class="panel-body project-language">
+							<p>{{project.language}}</p>
 						</div>
 					</div>
 				</div>

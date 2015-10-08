@@ -32,11 +32,11 @@
 	{
 		"name": "test5",
 		"url": "#",
-		"description": "This is just a test"
+		"description": "This is just a test with a medium length description. Most descriptions will be pretty short. DESCRIPTION!!!"
 	},
 	{
 		"name": "test6",
 		"url": "#",
-		"description": "This is just a test"
+		"description": "This is just a test with an extra long description. All of the test projects can be ignored; they won't lead you anywhere. Someday these spaces will be filled by actual prjects. I'm not expecting a description this long, but I thought I'd test it."
 	}
 ]

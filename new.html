@@ -12,23 +12,30 @@
 	<div class="container-fluid">
 		<div class="header">
 			<div class="content">
-				<input class="col-sm-4 col-sm-offset-8" ng-model="query" placeholder="Search all repos">
+				<a class="col-sm-8 col-md-4" href="#">David Shriver</a>
+				<input class="col-sm-4 col-md-offset-4" ng-model="query" placeholder="Search all repos">
 			</div>
 		</div>
 		<div class="content">
 			<div class="loading" ng-hide="projects">Loading projects...</div>
-			<div class="row no-repos" ng-hide="projects | filter:query" ng-cloak>
+			<div class="row no-repos" ng-show="filteredProjects" ng-cloak>
 				No repos found matching ''{{query}}''.
 			</div>
 			<div class="row" ng-show="projects" ng-cloak>
-				<div class="col-md-4 col-sm-6 project" ng-repeat="project in projects | filter:query">
-					<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
-					<p>{{project.description}}</p>
+				<div class="col-md-4 col-sm-6 project" ng-repeat="project in (filteredProjects = (projects | filter:query))">
+					<div class="project-name">
+						<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
+					</div>
+					<div class="project-description">
+						<p>{{project.description}}</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="footer">
-			Designed by <a href="#">David Shriver
+			<div class="content">
+				Designed by <a href="#">David Shriver</a>
+			</div>
 		</div>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

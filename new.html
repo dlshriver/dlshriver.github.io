@@ -13,7 +13,7 @@
 		<div class="header">
 			<div class="content">
 				<div class="row">
-					<h1><a class="col-sm-8 col-md-4" href="#">David Shriver</a></h1>
+					<a class="col-sm-8 col-md-4" href="#"><h1>David Shriver</h1></a>
 					<input class="col-sm-4 col-md-offset-4" ng-model="query" placeholder="Search all repos">
 				</div>
 			</div>
@@ -27,8 +27,8 @@
 				<div class="col-md-4 col-sm-6" ng-repeat="project in (filteredProjects = (projects | filter:query))">
 					<div class=" panel panel-default">
 						<a ng-href="{{project.url}}">
-							<div class="panel-heading project-name">
-								<h3 class="panel-title">{{project.name}}</h3>
+							<div class="panel-heading">
+								<h3 class="panel-title project-name">{{project.name}}</h3>
 							</div>
 						</a>
 						<div class="panel-body project-description">

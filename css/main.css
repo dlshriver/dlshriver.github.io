@@ -14,8 +14,11 @@
 }
 
 .project {
+	overflow:hidden;
+  text-wrap: none;
+  white-space: nowrap;
+  -ms-text-overflow:ellipsis;
 	text-overflow: ellipsis;
-	border: 1px solid black;
 }
 
 .project-name {

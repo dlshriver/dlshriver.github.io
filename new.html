@@ -9,17 +9,19 @@
 
 <body ng-controller="MainController as main">
 	<div class="container-fluid">
-		<div class="row">
-			Search: <input ng-model="query">
-		</div>
-		<div class="loading" ng-hide="projects">Loading projects...</div>
-		<div class="row no-repos" ng-hide="projects | filter:query" ng-cloak>
-			No repos found matching ''{{query}}''.
-		</div>
-		<div class="row" ng-show="projects" ng-cloak>
-			<div class="col-md-4" ng-repeat="project in projects | filter:query">
-				<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
-				<p>{{project.description}}</p>
+		<div class="content">
+			<div class="row">
+				Search: <input ng-model="query">
+			</div>
+			<div class="loading" ng-hide="projects">Loading projects...</div>
+			<div class="row no-repos" ng-hide="projects | filter:query" ng-cloak>
+				No repos found matching ''{{query}}''.
+			</div>
+			<div class="row" ng-show="projects" ng-cloak>
+				<div class="col-md-4" ng-repeat="project in projects | filter:query">
+					<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
+					<p>{{project.description}}</p>
+				</div>
 			</div>
 		</div>
 	</div>

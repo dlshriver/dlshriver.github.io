@@ -1,44 +1,16 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>David Shriver</title>
-		<link rel="stylesheet" media="(max-width: 769px)" href="./styles/thin.css" />
-		<link rel="stylesheet" media="(min-width: 770px)" href="./styles/style.css" />
-		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
-	</head>
-	<body>
-		<div class="container">
-			<div class="headerContainer">
-				<header>
-					<h1><a href="index.html">David Shriver</a></h1>
-					<nav>
-						<a href="">Posts</a>
-						<a href="">Projects</a>
-						<a href="contact.html">Contact</a>
-					</nav>
-				</header>
-			</div>
-			<div class="contentContainer">
-				<section class="featured">
-					<img src="https://avatars2.githubusercontent.com/u/5686137?v=3&s=460" titel="Profile Picture" /><h2>About Me</h2><p>
-			My name is David Shriver. I am a computer engineering undergrad at the University of Nebraska-Lincoln.
-		</p>				</section>
-				<section class="latest">
-					<h1>Latest Post</h1>
-					<h2>Posts</h2><h3>10</h3><h4>Apr 2014</h4><p>
-			I had a few minutes today so I addded dates to the latest sections on the main page. My next step will be to set up the Posts and Projects pages to display content. This shouldn't be too difficult, but I don't have enough time to build it today, so we'll save it for another time.
-		</p>				</section>
-				<section class="latest">
-					<h1>Latest Project</h1>
-					<h2>Projects</h2><h3>18</h3><h4>Mar 2014</h4><p>
-			I have started working on getting a system set up for posts and projects. I currently don't have much content on here, but that will come soon after I finish getting everything else ready. This project is a test to make sure that content on the front page is correctly formatted. I just copied the description from the post.
-		</p>				</section>
-			</div>
-			<div class="footerContainer">
-				<footer>
-					<p>Designed by <a href="bitcoin:1DavidSVB9nimRjqdpEFfzjGPBaq12kUz7" title="Donate">David Shriver</a></p>
-				</footer>
-			</div>
-		</div>
-	</body>
+<html ng-app="site">
+<head>
+	<title>David Shriver</title>
+	<link rel="shortcut icon" href="./favicon.ico" />
+</head>
+
+<body ng-controller="MainController as main">
+	<div ng-repeat="project in main.projects">
+		<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
+		<p>{{project.description}}</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>

@@ -2,6 +2,7 @@
 <html ng-app="site">
 <head>
 	<title>David Shriver</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="shortcut icon" href="./favicon.ico" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
 </head>
@@ -12,11 +13,11 @@
 			Search: <input ng-model="query">
 		</div>
 		<div class="loading" ng-hide="projects">Loading projects...</div>
-		<div class="row no-repos" ng-hide="projects" ng-cloak>
+		<div class="row no-repos" ng-hide="projects | filter:query" ng-cloak>
 			No repos found matching ''{{query}}''.
 		</div>
 		<div class="row" ng-show="projects" ng-cloak>
-			<div ng-repeat="project in projects | filter:query">
+			<div class="col-md-4" ng-repeat="project in projects | filter:query">
 				<a ng-href="{{project.url}}"><h1>{{project.name}}</h1></a>
 				<p>{{project.description}}</p>
 			</div>

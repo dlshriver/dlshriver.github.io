@@ -1,13 +1,13 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	border-top: 4px solid #0099CC;
 }
 
 .header {
 	margin: 0px;
 	width: 100%;
 	padding: 0px;
-	border-top: 4px solid #0099CC;
 }
 
 .content {
@@ -29,21 +29,14 @@ body {
 }
 
 .project-description {
-	background-color: #EFEFEF;
+	background-color: #FFF;
 	height: 100px;
 	overflow:hidden;
-  text-wrap: none;
   white-space: nowrap;
   -ms-text-overflow:ellipsis;
 	text-overflow: ellipsis;
 }
 
-.footer {
-	margin: 0px auto;
-	width: 100%;
-	padding: 0px;
-}
-
-.footer a {
+footer a {
 	color: #FF4444;
 }

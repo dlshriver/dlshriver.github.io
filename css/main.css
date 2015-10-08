@@ -1,9 +1,13 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
 .header {
 	margin: 0px;
 	width: 100%;
 	padding: 0px;
 	border-top: 4px solid #0099CC;
-	box-shadow: 0px 0px 15px #000;
 }
 
 .content {
@@ -11,9 +15,12 @@
 	width: 96%;
 	padding-bottom: 0px;
 	max-width: 1200px;
+	text-align: center;
 }
 
-.project {
+.project-name {
+	background-color: #CDCDCD;
+	height: 50px;
 	overflow:hidden;
   text-wrap: none;
   white-space: nowrap;
@@ -21,21 +28,20 @@
 	text-overflow: ellipsis;
 }
 
-.project-name {
-	background-color: #CDCDCD;
-	height: 25px;
-}
-
 .project-description {
 	background-color: #EFEFEF;
-	height: 65px;
+	height: 100px;
+	overflow:hidden;
+  text-wrap: none;
+  white-space: nowrap;
+  -ms-text-overflow:ellipsis;
+	text-overflow: ellipsis;
 }
 
 .footer {
 	margin: 0px auto;
 	width: 100%;
 	padding: 0px;
-	text-align: center;
 }
 
 .footer a {

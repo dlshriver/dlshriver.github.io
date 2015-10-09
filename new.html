@@ -12,8 +12,8 @@
 	<div class="container-fluid">
 		<div class="header">
 			<div class="row">
-				<a class="col-sm-8 col-md-4" href="#"><h1>David Shriver</h1></a>
-				<input class="col-sm-4 col-md-offset-4 search" ng-model="query" placeholder="Search all repos">
+				<a class="col-xs-12 col-sm-4" href="#"><h1>David Shriver</h1></a>
+				<input class="col-sm-4 col-sm-offset-4 col-xs-12 search" ng-model="query" placeholder="Search all repos">
 			</div>
 		</div>
 		<div class="content">
@@ -22,7 +22,7 @@
 				No repos found matching ''{{query}}''.
 			</div>
 			<div class="row" ng-show="projects" ng-cloak>
-				<div class="col-md-4 col-sm-6" ng-repeat="project in (filteredProjects = (projects | filter:query))">
+				<div class="col-sm-4 col-xs-6" ng-repeat="project in (filteredProjects = (projects | filter:query))">
 					<div class=" panel panel-default">
 						<a ng-href="{{project.url}}">
 							<div class="panel-heading">

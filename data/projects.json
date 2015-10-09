@@ -43,5 +43,17 @@
 		"url": "#",
 		"description": "This is just a test with an extra long description. All of the test projects can be ignored; they won't lead you anywhere. Someday these spaces will be filled by actual prjects. I'm not expecting a description this long, but I thought I'd test it.",
 		"language": "test"
+	},
+	{
+		"name": "test7",
+		"url": "#",
+		"description": "This is just a test",
+		"language": "last"
+	},
+	{
+		"name": "test8",
+		"url": "#",
+		"description": "This is just a test",
+		"language": "page"
 	}
 ]

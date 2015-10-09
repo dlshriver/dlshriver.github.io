@@ -1,3 +1,9 @@
+a,
+a:focus,
+a:hover {
+		text-decoration: none;
+}
+
 body {
 	position: absolute;
 	width: 100%;
@@ -19,13 +25,15 @@ body {
 	padding: 0px;
 }
 
-.search {
-	@media (min-width: @screen-sm-min) {
-		margin-bottom: 20px;
-	}
-
-	@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
+	.search {
 		margin-top: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.search {
+		margin-bottom: 20px;
 	}
 }
 
@@ -78,16 +86,4 @@ footer {
 
 footer a {
 	color: #FF4444;
-}
-
-footer a :hover {
-	text-decoration: none;
-}
-
-.content a :hover {
-	text-decoration: none;
-}
-
-.header a :hover {
-	text-decoration: none;
 }

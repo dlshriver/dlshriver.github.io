@@ -25,6 +25,20 @@ body {
 	padding: 0px;
 }
 
+.name {
+	color: #0099CC;
+}
+
+@media (max-width: 768px) {
+	.header .name {
+		text-align: center;
+	}
+}
+
+.search {
+	margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
 	.search {
 		margin-top: 20px;

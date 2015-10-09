@@ -15,18 +15,17 @@ body {
 .header {
 	margin: 0px auto;
 	width: 96%;
+	max-width: 1200px;
 	padding: 0px;
 }
 
-@media (min-width: @screen-md-min) {
-	.search {
-		margin-top: 20px;
-	}
-}
-
-@media (min-width: @screen-sm-min) {
-	.search {
+.search {
+	@media (min-width: @screen-sm-min) {
 		margin-bottom: 20px;
+	}
+
+	@media (min-width: @screen-md-min) {
+		margin-top: 20px;
 	}
 }
 
@@ -39,7 +38,7 @@ body {
 }
 
 .panel-heading {
-	background-color: #CDCDCD;
+	background-color: #EDEDED;
 }
 
 .project-name {

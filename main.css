@@ -1,0 +1,282 @@
+html{
+	height: 100%;
+}
+
+body {
+	background: #212121;
+	color: #ffffff;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Segoe Ui Light, wf_SegoeUILight, Segoe Ui, Segoe, Segoe WP, Tahoma, Verdana, Aria, "sans-serif";
+	font-weight: 200;
+}
+
+#body-top {
+	height: 60%;
+	transition:height 0.2s;
+	margin-bottom: -3px;
+}
+@media only screen and (min-width: 650px){#body-top{height:80%}}
+
+#body-bottom {
+	background: #3c3c41;
+	height: 40%;
+	border-top: 3px solid #4285f4;
+	transition:height 0.2s;
+}
+@media only screen and (min-width: 650px){#body-bottom{height:20%}}
+
+.table{
+	display: table;
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	transition: text-align 0.2s;
+}
+@media only screen and (min-width: 650px){
+	.table{
+		text-align: left;
+	}
+}
+
+#title,#nav-items{
+	display: table-cell;
+	vertical-align: middle;
+}
+@media only screen and (min-width: 650px){
+	#title{
+		position: absolute;
+		bottom: -17px;
+	}
+}
+
+#title h1{
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	transition: font-size 0.2s
+}
+@media only screen and (min-width: 450px){
+	#title h1{
+		font-size: 50px;
+	}
+}
+@media only screen and (min-width: 650px){
+	#title h1{
+		font-size: 80px;
+	}
+}
+
+#nav-items{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+#nav-items li:nth-child(-n+3){
+	margin-bottom: 10px;
+}
+#nav-items a{
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+#nav-items a:hover{
+	border-bottom: 1px solid #4285f4;
+}
+@media only screen and (min-width: 650px){
+	#nav-items{
+		position: absolute;
+		bottom: 10%;
+	}
+	#nav-items li{
+		float: left;
+	}
+	#nav-items li:nth-child(-n+3):after{
+		content: '\b7';
+		padding: 0 8px;
+	}
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: inherit;
+	transition: font-size 0.2s;
+}
+h3 {
+	display: inline;
+	font-size: 20px;
+	font-weight: inherit;
+	transition: font-size 0.2s;
+}
+
+.header{
+	background: #3c3c41;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	border-bottom: 4px solid #4285f4;
+	text-align: center;
+	transition: height 0.2s;
+}
+@media only screen and (min-width: 768px){
+	.header{
+		height: 54px;
+	}
+}
+
+.header-title{
+	margin: 0;
+	padding: 0;
+	float: none;
+	font-size: 50px;
+	font-weight: inherit;
+	transition: font-size 0.2s;
+	transition: float 0.2s;
+}
+.header-title a{
+	color: #ffffff;
+	text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+	.header-title{
+		float: left;
+	}
+}
+
+.header-nav .nav-items{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-size: 25px;
+}
+.header-nav .nav-items a{
+	color: inherit;
+	text-decoration: none;
+}
+@media only screen and (min-width: 450px){
+	.nav-items li{
+		display: inline;
+		margin-top: 27px;
+	}
+	.nav-items li:nth-child(-n+2):after{
+		content: '\b7';
+		padding: 0 25px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.nav-items{
+		float: right;
+	}
+	.nav-items li{
+		float: left;
+		margin-top: 27px;
+	}
+}
+
+.container{
+	display: table;
+	width: 100%;
+	margin: auto;
+	transition: width 0.2s;
+}
+@media only screen and (min-width: 650px){
+	.container{
+		width: 650px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.container{
+		width: 750px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.container{
+		width: 970px;
+	}
+}
+
+.row{
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	transition: width 0.2s;
+}
+
+.cell{
+	display: table-cell;
+	width: 100%;
+	float: left;
+	margin: 0;
+	text-align: center;
+	transition: width 0.2s;
+	transition: height 0.2s;
+}
+@media only screen and (min-width: 650px){
+	.cell{
+		width: 300px;
+		padding: 5px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.cell{
+		width: 240px;
+		padding: 5px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.cell{
+		width: 313px;
+		padding: 5px;
+	}
+}
+
+.project{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px){
+	.project{
+		width: 94%;
+		height: 200px;
+		margin: 0;
+	}
+}
+
+.project-title{
+	font-size: 28px;
+	border-bottom: 1px solid;
+}
+.project-title a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.project-description{
+	height: 105px;
+	padding: 10px;
+}
+
+.project-footer{
+	border: 1px solid;
+	border-top: none;
+	text-align: left;
+	padding: 5px 15px;
+}
+
+.vhdl{
+	border-top: 4px solid #adb2cb;
+}
+
+.html{
+	border-top: 4px solid #e44b23;
+}
+
+.java{
+	border-top: 4px solid #b07219;
+}

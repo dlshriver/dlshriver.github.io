@@ -12,6 +12,11 @@ body {
 	font-weight: 200;
 }
 
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 #body-top {
 	height: 60%;
 	transition:height 0.2s;
@@ -205,6 +210,7 @@ h3 {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	text-align: left;
 	transition: width 0.2s;
 }
 
@@ -219,7 +225,7 @@ h3 {
 }
 @media only screen and (min-width: 650px){
 	.cell{
-		width: 300px;
+		width: 315px;
 		padding: 5px;
 		margin: 0;
 	}
@@ -234,6 +240,37 @@ h3 {
 @media only screen and (min-width: 992px){
 	.cell{
 		width: 313px;
+		padding: 5px;
+		margin: 0;
+	}
+}
+
+.cell-2{
+	display: table-cell;
+	width: 94%;
+	float: left;
+	margin: 2%;
+	text-align: center;
+	transition: width 0.2s;
+	transition: height 0.2s;
+}
+@media only screen and (min-width: 650px){
+	.cell-2{
+		width: 630px;
+		padding: 5px;
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 768px){
+	.cell-2{
+		width: 490px;
+		padding: 5px;
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.cell-2{
+		width: 636px;
 		padding: 5px;
 		margin: 0;
 	}

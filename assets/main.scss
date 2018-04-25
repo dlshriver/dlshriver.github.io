@@ -1,0 +1,100 @@
+---
+---
+@import "minima";
+
+.project-title a {
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+        color: $brand-color;
+        text-decoration: none;
+    }
+    &:visited {
+        color: $text-color;
+    }
+}
+
+.project-title h2 {
+    @include relative-font-size(1.5);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.5);
+    }
+}
+
+.lang-Python .project-title {
+    border-bottom: 4px solid #3572A5;
+}
+
+.lang-HTML .project-title {
+	border-bottom: 4px solid #e44b23;
+}
+
+div.project-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+p.project-desc {
+    box-sizing: border-box;
+    height: 5*$base-font-size;
+    padding-left: 15px;
+    padding-right: 15px;
+    // text-align: justify;
+}
+
+p.project-lang {
+    box-sizing: border-box;
+    height: 2*$base-font-size;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+div.project {
+    box-sizing: border-box;
+    width: 32%;
+    float: left;
+    margin-left: 0.33%;
+    margin-right: 0.33%;
+}
+
+img.profile {
+    box-sizing: border-box;
+    width: 33.33%;
+    float: right;
+}
+
+@include media-query($on-laptop) {
+    div.project {
+        box-sizing: border-box;
+        width: 49.0%;
+        float: left;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+
+    p.project-desc {
+        height: 3*$base-font-size;
+    }
+}
+  
+@include media-query($on-palm) {
+    div.project {
+        box-sizing: border-box;
+        width: 100%;
+        float: left;
+    }
+    img.profile {
+        box-sizing: border-box;
+        width: 50px;
+        margin-top: -80px;
+    }
+}

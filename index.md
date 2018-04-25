@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img src="{{ '/assets/img/profile.png' | absolute_url }}" class="profile" />
+<img src="{{ '/assets/img/profile.png' | absolute_url }}" class="profile" alt="Profile Picture">
 
 ## Bio
 

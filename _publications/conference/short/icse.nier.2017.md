@@ -11,4 +11,4 @@ timestamp: Thu, 13 Jul 2017 14:31:50 +0200
 date: 2017-05-20
 ---
 
-**David Shriver**, Sebastian Elbaum, and K. T. Stolee. "At the End of Synthesis: Narrowing Program Candidates". International Conference on Software Engineering - New Ideas and Emerging Results (ICSE NIER). 2017. [(pdf)](https://cse.unl.edu/~dshriver/papers/ICSE17-NIER.pdf)
+**David Shriver**, Sebastian Elbaum, and K. T. Stolee. "At the End of Synthesis: Narrowing Program Candidates". International Conference on Software Engineering - New Ideas and Emerging Results (ICSE NIER). 2017. [(pdf)]({{'/assets/publications/ICSE17-NIER.pdf' | absolute_url}})

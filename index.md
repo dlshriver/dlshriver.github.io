@@ -21,3 +21,10 @@ I am interested in how we can test and verify machine learning systems.
 {% for publication in short_conference_pubs %}
 {{publication.content}}
 {% endfor %}
+
+### Misc (Thesis, etc.)
+
+{% assign misc_pubs = site.publications | where_exp: "pub", "pub.path contains 'misc'" | reverse %}
+{% for publication in misc_pubs %}
+{{publication.content}}
+{% endfor %}

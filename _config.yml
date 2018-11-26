@@ -16,7 +16,7 @@
 title: David Shriver
 email: davidshriver@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am a first year PhD student at the University of Nebraska-Lincoln. 
+  I am a PhD student at the University of Virginia. 
   My research interests are in program analysis and testing, especially 
   analysis and testing of deep learning systems.
 baseurl: "" # the subpath of your site, e.g. /blog

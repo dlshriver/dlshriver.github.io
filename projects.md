@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-These are a collection of projects I've worked on, for both research and personal enjoyment. Most of them can be found on [Github](https://github.com/dlshriver).
+These are a collection of projects I've worked on, for research, class, and/or personal enjoyment. Most of them can be found on [Github](https://github.com/dlshriver).
 
 <br/>
 

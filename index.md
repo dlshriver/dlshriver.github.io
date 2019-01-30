@@ -7,11 +7,11 @@ title: About
 
 ## Bio
 
-I am a computer science Ph.D. student at the University of Virginia, advised by [Sebastian Elbaum](https://engineering.virginia.edu/faculty/sebastian-elbaum). I have a BS in computer engineering from UNL and a Masters in computer science from UNL. My research interests are in *testing and verification of machine learning systems*, especially in the context of cyber-physical systems. My Masters work was on assessing the quality and stability of recommender systems.
+I am a computer science Ph.D. student at the University of Virginia, advised by [Sebastian Elbaum](https://engineering.virginia.edu/faculty/sebastian-elbaum). I have a BS in computer engineering and a Masters in computer science from UNL. My Masters work was on assessing the quality and stability of recommender systems. My current research interests are in *testing and verification of machine learning systems*, especially in the context of cyber-physical systems.
 
 ## Research Interests
 
-My interests are in ensuring correctness of machine learning systems. In particular, I am interested in how we can adapt software engineering methodologies for quality assurance, such as program testing and verification, to systems that use machine learning components.
+My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in how we can adapt software engineering methodologies for quality assurance, such as program testing and verification, to systems that use machine learning components.
 
 ## Publications
 

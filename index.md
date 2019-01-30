@@ -11,7 +11,7 @@ I am a computer science Ph.D. student at the University of Virginia, advised by 
 
 ## Research Interests
 
-I am interested in how we can test and verify machine learning systems. 
+My interests are in ensuring correctness of machine learning systems. In particular, I am interested in how we can adapt software engineering methodologies for quality assurance, such as program testing and verification, to systems that use machine learning components.
 
 ## Publications
 

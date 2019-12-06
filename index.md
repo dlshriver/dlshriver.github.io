@@ -11,21 +11,23 @@ I am a computer science Ph.D. student at the University of Virginia, advised by 
 
 ## Research Interests
 
-My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in how we can adapt software engineering methodologies for quality assurance, such as program testing and verification, to systems that use machine learning components.
+My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in how we can adapt software engineering methodologies for quality assurance, such as program analysis, testing, and verification, to systems that use machine learning components.
 
-## Publications
+## Publications 
 
-### Conference Papers
+<!-- <a href="https://orcid.org/{{site.orcid}}"><img alt="ORCID logo" src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" hspace="4" /></a> -->
 
-{% assign conference_pubs = site.publications | where_exp: "pub", "pub.path contains 'conference/full'" | reverse %}
-{% for publication in conference_pubs %}
+### Journal Papers
+
+{% assign journal_pubs = site.publications | where_exp: "pub", "pub.path contains 'journal'" | reverse %}
+{% for publication in journal_pubs %}
 {{publication.content}}
 {% endfor %}
 
-### Conference Papers (short)
+### Conference Papers
 
-{% assign short_conference_pubs = site.publications | where_exp: "pub", "pub.path contains 'conference/short'" | reverse %}
-{% for publication in short_conference_pubs %}
+{% assign conference_pubs = site.publications | where_exp: "pub", "pub.path contains 'conference'" | reverse %}
+{% for publication in conference_pubs %}
 {{publication.content}}
 {% endfor %}
 

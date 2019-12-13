@@ -7,4 +7,4 @@ year: 2019
 date: 2019-12-12
 ---
 
-**David Shriver**, Dong Xu, Sebastian Elbaum, Matthew Dwyer. "DNNV: A Framework for Deep Neural Network Verification". *(Under Submission)*. [(tool)](https://github.com/dlshriver/DNNV)
+**David Shriver**, Dong Xu, Sebastian Elbaum, Matthew Dwyer. "DNNV: A Framework for Deep Neural Network Verification". *(Under Submission)*. [(tool)](https://github.com/dlshriver/DNNV) [(demo)](https://youtu.be/M5G_OWfCF2o)

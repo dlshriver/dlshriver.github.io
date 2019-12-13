@@ -6,10 +6,6 @@ permalink: /projects/
 
 These are a collection of projects I've worked on, for research, class, and/or personal enjoyment. Most of them can be found on my [Github](https://github.com/dlshriver).
 
-<!-- ## Research Projects -->
-
-## Personal
-
 {% assign sorted_projects = site.projects | sort: 'last_updated' | reverse %}
 {% for project in sorted_projects %}
 <div class="project lang-{{project.language}}">

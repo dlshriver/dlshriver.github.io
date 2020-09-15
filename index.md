@@ -7,7 +7,7 @@ title: About
 
 ## Bio
 
-I am a computer science Ph.D. student at the University of Virginia, advised by [Sebastian Elbaum](https://engineering.virginia.edu/faculty/sebastian-elbaum) and [Matt Dwyer](https://engineering.virginia.edu/faculty/matthew-b-dwyer). I have a BS in computer engineering and a Masters in computer science from UNL. My Masters work was on assessing the quality and stability of recommender systems. My current research interests are in *analysis, testing, and verification of machine learning systems*, especially in the context of cyber-physical systems.
+I am a computer science Ph.D. student at the University of Virginia, and a member of [LESS lab](https://less-lab-uva.github.io/), advised by [Sebastian Elbaum](https://engineering.virginia.edu/faculty/sebastian-elbaum) and [Matt Dwyer](https://engineering.virginia.edu/faculty/matthew-b-dwyer). I have a BS in computer engineering and a Masters in computer science from UNL. My Masters work was on assessing the quality and stability of recommender systems. My current research interests are in *analysis, testing, and verification of machine learning systems*, especially in the context of cyber-physical systems.
 
 ## Research Interests
 

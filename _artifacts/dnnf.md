@@ -5,7 +5,7 @@ excerpt: "DNNF is a tool for applying falsification methods such as adversarial 
 access_url: https://github.com/dlshriver/DNNF
 links: 
     GitHub: https://github.com/dlshriver/DNNF
-    # Documentation: https://dnnf.readthedocs.io/
+    Documentation: https://dnnf.readthedocs.io/
 ---
 
 DNNF is a tool for applying falsification methods such as adversarial attacks to the checking of DNN correctness problems.

@@ -6,6 +6,7 @@ access_url: https://github.com/dlshriver/DNNF
 links: 
     GitHub: https://github.com/dlshriver/DNNF
     Documentation: https://dnnf.readthedocs.io/
+    Video: https://youtu.be/hcQFYUFwp_U
 ---
 
 <img src="{{'/images/tools/dnnf.png' | absolute_url}}">

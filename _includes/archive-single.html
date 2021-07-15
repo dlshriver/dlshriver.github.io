@@ -40,15 +40,15 @@
     <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-    {% if post.collection == 'teaching' %}
-    <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.collection == 'publications' %}
+    {% if post.collection == 'publications' %}
     {% if post.abstract and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.abstract | markdownify }}</p>
     {% elsif post.abstract and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">
-    <p>{{ post.abstract | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}"
-          rel="permalink"> Read more</a></strong></p>
+    <p>{{ post.abstract | truncatewords: 50 | markdownify | remove: '<p>' | remove: '</p>' }}
+    <br>
+    <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong>
+    </p>
     </p>
     {% endif %}
     {% elsif post.date %}
@@ -58,22 +58,24 @@
     </p>
     {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    <!-- {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">
     <p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}"
           rel="permalink"> Read more</a></strong></p>
     </p>
+    {% endif %} -->
+    {% if post.excerpt %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
 
     {% if post.collection == 'publications' %}
-    <p>
-      <b>Cite:</b>
-      <!-- [<a href="">bibtex</a>] -->
+    <!-- <p>
+      <b>Recommended citation:</b>
       <br />
       {{post.citation}}
-    </p>
+    </p> -->
     {% if post.downloads %}
     <p>
       <b>Download:</b>

@@ -7,6 +7,7 @@ links:
     GitHub: https://github.com/dlshriver/DNNF
     Documentation: https://dnnf.readthedocs.io/
     Video: https://youtu.be/hcQFYUFwp_U
+    Docker: https://hub.docker.com/r/dlshriver/dnnf
 ---
 
 <img src="{{'/images/tools/dnnf.png' | absolute_url}}">

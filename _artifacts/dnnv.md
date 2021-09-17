@@ -6,7 +6,8 @@ access_url: https://github.com/dlshriver/DNNV
 links: 
     GitHub: https://github.com/dlshriver/DNNV
     Documentation: https://dnnv.readthedocs.io/
-    Video Demo: https://youtu.be/M5G_OWfCF2o
+    Video: https://youtu.be/GhXlONbvx1Y
+    Docker: https://hub.docker.com/r/dlshriver/dnnv
 ---
 
 <img src="{{'/images/tools/dnnv.png' | absolute_url}}">

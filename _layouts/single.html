@@ -51,7 +51,7 @@ layout: default
         {% endif %}
         {% assign authors = authors_updated %}
         {% endfor %}
-        {% if authors %}
+        {% if page.author %}
         <p>
         <b>Authors:</b> {{authors | replace_first: ", ", ""}}
         </p>

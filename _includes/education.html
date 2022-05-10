@@ -1,0 +1,29 @@
+<section class="cv-section">
+    <header class="section-header">
+        <h2>Education</h2>
+    </header>
+    {% for education in site.data.profile.education %}
+    <div class="cv-item">
+        <h3 class="cv-item-title" itemprop="award">
+            {{ education.degree }}
+        </h3>
+        &bull;
+        <div class="cv-item-details">
+            {{ education.date }}
+        </div>
+        &bull;
+        <div class="cv-item-details" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+            <div class="cv-item-details" itemprop="name">
+                {{ education.school }}
+            </div>
+        </div>
+        {% if education.advisor %}
+        <br />
+        <div class="cv-item-details">
+            Advised by:
+            {{ education.advisor | join: " and " }}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,107 @@
+.cv-header {
+    .profile-photo {
+        width: 150px;
+        max-width: 100%;
+        overflow: hidden;
+        @include border-radius(150px);
+        margin: 0 auto;
+        display: block;
+    }
+
+    .header-name {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .title-bar {
+        @include section_border;
+        padding: 0.25rem 0;
+        font-size: 0.85rem;
+        text-align: center;
+
+        .social-link {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .header-bio {
+        margin: 0 0 1rem;
+    }
+
+    .header-isavailable {
+        margin: 0 0 1rem 0;
+        padding: 0.5rem 0;
+        background: $primary-color;
+        color: white;
+        text-align: center;
+    }
+}
+
+.section-header {
+    @include section_border;
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+}
+
+.cv-section {
+    margin: 0 0 1rem 0;
+
+    .cv-item {
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    .cv-item-title {
+        margin: 0;
+        display: inline;
+    }
+
+    .cv-item-details {
+        margin: 0;
+        display: inline;
+    }
+}
+
+.cv-footer {
+    border-top: 4px solid $text-color;
+    padding-top: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.print-only {
+    display: none !important;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    .print-only {
+        display: block !important;
+
+        .cv-item-details {
+            display: inline !important;
+        }
+    }
+
+    span.print-only {
+        display: inline !important;
+    }
+
+
+    html {
+        font-size: 10pt;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        font-weight: normal;
+    }
+}

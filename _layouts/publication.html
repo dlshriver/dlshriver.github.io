@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<h1 class="publication-title">{{ page.title }}</h1>
+
+<section class="publication-details">
+    <h2 class="publication-details-name">Authors:</h2>
+    {% capture boldauthor %}<span class="publication-author">{{site.data.profile.name}}</span>{% endcapture %}
+    <div class="publication-details-value">{{ page.author | join: ", " | replace: site.data.profile.name, boldauthor }}
+    </div>
+</section>
+
+<section class="publication-details">
+    <h2 class="publication-details-name">Publication Date:</h2>
+    <div class="publication-details-value">
+        {{ page.date | date_to_long_string }}
+    </div>
+</section>
+
+<section class="publication-details">
+    <h2 class="publication-details-name">Venue:</h2>
+    <div class="publication-details-value">
+        {{ page.venue }}
+    </div>
+</section>
+
+<section class="publication-details">
+    <h2 class="publication-details-name">Abstract:</h2>
+    <p class="publication-details-value">
+        {{ page.abstract }}
+    </p>
+</section>
+
+{% if page.downloads %}
+<section class="publication-details">
+    <h2 class="publication-details-name">Downloads:</h2>
+    {% for download in page.downloads %}
+    {% if download[1] contains '://' %}
+    {% assign url = download[1] %}
+    {% else %}
+    {% assign url = base_path | append: download[1] %}
+    {% endif %}
+    [<a href="{{url}}">{{download[0] | capitalize}}</a>]
+    {% endfor %}
+</section>
+{% endif %}
+
+<!-- <h2 class="publication-subheader">Citation:</h2>
+<p class="publication-details">
+    {{ page.citation }}
+</p> -->

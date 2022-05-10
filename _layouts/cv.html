@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <div itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="sameAs" content="{{ site.url }}" />
+        {% if site.data.profile.telephone %}
+        <meta itemprop="telephone" content="{{ site.data.profile.telephone }}" />
+        {% endif %}
+        {% if site.data.profile.address %}
+        <meta itemprop="address" content="{{ site.data.profile.address }}" />
+        {% endif %}
+
+        <header class="cv-header">
+            <img src="{{ site.data.profile.photo }}" alt="Profile picture." class="profile-photo no-print"
+                itemprop="image">
+
+            <h1 class="header-name" itemprop="name">{{ site.data.profile.name }}</h1>
+
+            <section class="cv-section print-only">
+                <header class="section-header">
+                    <h2>Contact</h2>
+                </header>
+                {% if site.data.profile.telephone %}
+                <div class="cv-item">
+                    Phone: {{ site.data.profile.telephone }}
+                </div>
+                {% endif %}
+                <div class="cv-item">
+                    Email: {{ site.data.profile.email }}
+                </div>
+                <div class="cv-item">
+                    Website: {{ site.url }}
+                </div>
+            </section>
+
+            <div class="title-bar no-print">
+                {% if site.data.profile.email %}
+                <a href="mailto:{{ site.data.profile.email }}" class="social-link" title="Email me!">
+                    <span class="fa-stack" style="vertical-align: top;">
+                        <i class="fas fa-fw fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-fw fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                {% endif %}
+
+                {% include social-bar.html %}
+
+                <a href="javascript:window.print()" class="social-link" title="Print">
+                    <span class="fa-stack" style="vertical-align: top;">
+                        <i class="fas fa-fw fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-fw fa-print fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+
+            <header class="section-header print-only">
+                <h2>Research Interests</h2>
+            </header>
+
+            <div class="header-bio" itemprop="description">
+                {{ site.data.profile.bio | markdownify }}
+            </div>
+
+            {% if site.data.profile.available %}
+            <div class="header-isavailable no-print">
+                {{site.data.profile.available}}
+            </div>
+            {% endif %}
+        </header>
+
+        {% include education.html %}
+
+        {% include positions.html %}
+
+        {% include artifacts.html %}
+
+        {% include publications.html %}
+
+        {% include awards.html %}
+
+        {% include service.html %}
+    </div>
+
+    <footer class="cv-footer no-print">
+        <a href="/sitemap.xml">Sitemap</a>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>

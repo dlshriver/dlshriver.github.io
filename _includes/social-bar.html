@@ -1,0 +1,42 @@
+{% if site.data.profile.social.orcid %}
+<a href="http://orcid.org/{{ site.data.profile.social.orcid }}" class="social-link" title="ORCID Profile">
+    <i class="ai ai-fw ai-orcid ai-2x"></i>
+</a>
+{% endif %}
+
+{% if site.data.profile.social.google-scholar %}
+<a href="https://scholar.google.com/citations?user={{ site.data.profile.social.google-scholar }}" class="social-link"
+    title="Google Scholar Profile">
+    <span class="fa-stack" style="vertical-align: top;">
+        <i class="fas fa-fw fa-circle fa-stack-2x"></i>
+        <i class="ai ai-fw ai-google-scholar ai-stack-2x ai-inverse"></i>
+    </span>
+</a>
+{% endif %}
+
+{% if site.data.profile.social.github-username %}
+<a href="https://github.com/{{ site.data.profile.social.github-username }}" class="social-link" title="GitHub Profile">
+    <i class="fab fa-fw fa-github fa-2x"></i>
+</a>
+{% endif %}
+
+{% if site.data.profile.social.docker-username %}
+<a href="https://hub.docker.com/u/{{ site.data.profile.social.docker-username }}" class="social-link"
+    title="Docker Profile">
+    <i class="fab fa-fw fa-docker fa-2x"></i>
+</a>
+{% endif %}
+
+{% if site.data.profile.social.linkedin-username %}
+<a href="https://www.linkedin.com/in/{{ site.data.profile.social.linkedin-username }}" class="social-link"
+    title="LinkedIn Profile">
+    <i class="fab fa-fw fa-linkedin fa-2x"></i>
+</a>
+{% endif %}
+
+{% if site.data.profile.social.youtube-channel %}
+<a href="https://www.youtube.com/channel/{{ site.data.profile.social.youtube-channel }}" class="social-link"
+    title="YouTube Channel">
+    <i class="fab fa-fw fa-youtube fa-2x"></i>
+</a>
+{% endif %}

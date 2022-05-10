@@ -1,0 +1,44 @@
+<section class="cv-section">
+    <header class="section-header">
+        <h2>Publications</h2>
+    </header>
+    {% capture boldauthor %}<b>{{site.data.profile.name}}</b>{% endcapture %}
+    {% for publication in site.publications reversed %}
+    <div class="cv-item no-print" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
+        <!-- <a href="{{ publication.url }}">
+            <h3 class="cv-item-title" itemprop="name">{{ publication.title }}</h3>
+        </a> -->
+        <h3 class="cv-item-title" itemprop="name">{{ publication.title }}</h3>
+        <br />
+        <div class="cv-item-details">
+            {{ publication.author | join: ", " | replace: "David Shriver", "<b>David Shriver</b>" }}
+        </div>
+        <br />
+        {% if publication.venue %}
+        <div class="cv-item-details">
+            {{ publication.venue }}
+        </div>
+        &mdash;
+        {% endif %}
+        <div class="cv-item-details">
+            {{ publication.year }}
+        </div>
+        <br />
+        {% if publication.downloads %}
+        <div class="cv-item-details">
+            {% for download in publication.downloads %}
+            {% if download[1] contains '://' %}
+            {% assign url = download[1] %}
+            {% else %}
+            {% assign url = base_path | append: download[1] %}
+            {% endif %}
+            [<a href="{{url}}">{{download[0] | capitalize}}</a>]
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="cv-item print-only">
+        {{ publication.citation | join: ", " | replace: "David Shriver", "<b>David Shriver</b>" }}
+    </div>
+    {% endfor %}
+</section>

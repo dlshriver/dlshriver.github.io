@@ -1,0 +1,11 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin section_border {
+    border-top: 3px solid $text-color;
+    border-bottom: 2px solid $text-color;
+    padding: .2rem 0 .2rem 0;
+}

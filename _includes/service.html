@@ -1,0 +1,10 @@
+<section class="cv-section">
+    <header class="section-header">
+        <h2>Service</h2>
+    </header>
+    {% for service in site.data.profile.service %}
+    <div class="cv-item">
+        &bullet; {{ service }}
+    </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,20 @@
+<section class="cv-section">
+    <header class="section-header">
+        <h2>Positions Held</h2>
+    </header>
+    {% for position in site.data.profile.positions %}
+    <div class="cv-item">
+        <h3 class="cv-item-title">
+            {{ position.title }}
+        </h3>
+        &bull;
+        <div class="cv-item-details">
+            {{ position.employer }}
+        </div>
+        <br />
+        <div class="cv-item-details">
+            {{ position.duration }}
+        </div>
+    </div>
+    {% endfor %}
+</section>

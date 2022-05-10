@@ -19,7 +19,7 @@ defaults:
 analytics:
   google:
     # CHANGE THIS IF YOU USE THIS TEMPLATE!
-    tracking_id: "G-3N6Y3DYYM0"
+    tracking_id: "G-RVTY8MQ9WB"
 
 plugins:
   - jekyll-sitemap
@@ -30,3 +30,6 @@ exclude:
   - LICENSE
   - README
   - tmp
+
+sass:
+  style: compressed

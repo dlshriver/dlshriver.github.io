@@ -4,15 +4,32 @@
     <meta name="keywords" content="{{ site.data.profile.keywords | join: ', ' }}">
     <meta name="author" content="{{ site.data.profile.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     {% if page.title %}
     <title>{{ page.title }}</title>
     {% else %}
     <title>{{ site.data.profile.name }}</title>
     {% endif %}
-    <link rel="stylesheet" href="/assets/css/default.css">
-    <link rel="stylesheet" href="/assets/css/academicons.min.css">
-    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible&display=swap' rel='stylesheet'>
+
+    <style type="text/css">
+        {% capture include_to_scssify %}
+            {% include default_style.scss %}
+        {% endcapture %}
+        {{include_to_scssify | scssify }}
+    </style>
+
+    <link rel="preload" as="style" href="/assets/css/academicons.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="/assets/css/fontawesome.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/academicons.min.css">
+        <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible&display=swap' rel='stylesheet'>
+    </noscript>
 
     {% include analytics.html %}
 </head>

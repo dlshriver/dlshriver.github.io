@@ -5,6 +5,7 @@
     {% capture boldauthor %}<b>{{site.data.profile.name}}</b>{% endcapture %}
     {% for publication in site.publications reversed %}
     <div class="cv-item no-print" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
+        <meta itemprop="datePublished" content="{{publication.date}}" />
         <!-- <a href="{{ publication.url }}">
             <h3 class="cv-item-title" itemprop="name">{{ publication.title }}</h3>
         </a> -->

@@ -18,6 +18,7 @@ defaults:
 
 analytics:
   google:
+    # CHANGE THIS IF YOU USE THIS TEMPLATE!
     tracking_id: "G-3N6Y3DYYM0"
 
 plugins:

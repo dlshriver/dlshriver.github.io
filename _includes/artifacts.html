@@ -4,7 +4,7 @@
     </header>
     {% for artifact in site.artifacts %}
     <div class="cv-item">
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+        <div itemscope itemtype="https://schema.org/SoftwareSourceCode">
             <meta itemprop="author" content="{{ site.data.profile.name }}" />
             <meta itemprop="codeRepository" content="{{ artifact.repository_url }}" />
             {% if artifact.programming_language %}

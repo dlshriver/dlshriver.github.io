@@ -40,20 +40,27 @@
                 {% if site.data.profile.email %}
                 <a href="mailto:{{ site.data.profile.email }}" class="social-link" title="Email me!">
                     <span class="fa-stack" style="vertical-align: top;">
-                        <i class="fas fa-fw fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-fw fa-envelope fa-stack-1x fa-inverse"></i>
+                        <i class="far fa-fw fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-fw fa-envelope fa-stack-1x"></i>
                     </span>
                 </a>
                 {% endif %}
 
                 {% include social-bar.html %}
 
-                <a href="javascript:window.print()" class="social-link" title="Print">
+                <a href="javascript:window.print()" class="social-link" id="print-link" title="Print">
                     <span class="fa-stack" style="vertical-align: top;">
-                        <i class="fas fa-fw fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-fw fa-print fa-stack-1x fa-inverse"></i>
+                        <i class="far fa-fw fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-fw fa-print fa-stack-1x"></i>
                     </span>
                 </a>
+                <noscript>
+                    <style type="text/css">
+                        #print-link {
+                            display: none !important;
+                        }
+                    </style>
+                </noscript>
             </div>
 
             <header class="section-header print-only">
@@ -85,11 +92,64 @@
     </div>
 
     <footer class="cv-footer no-print">
+        <p>&copy; David Shriver 2022</p>
         <a href="/sitemap.xml">Sitemap</a>
     </footer>
 
     </div>
 
+    <a id="light-dark-toggle" class="no-print" href="?light">
+        <span class="fa-stack" style="vertical-align: top;">
+            <i class="far fa-fw fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-sun fa-stack-1x"></i>
+        </span>
+    </a>
+    <noscript>
+        <style type="text/css">
+            #light-dark-toggle {
+                display: none !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        var r = document.querySelector(':root');
+
+        function activateDarkMode() {
+            r.style.setProperty('--primary-color', '#40826D');
+            r.style.setProperty('--secondary-color', 'white');
+            r.style.setProperty('--text-color', 'white');
+            r.style.setProperty('--background-color', 'black');
+            document.querySelector('#light-dark-toggle').setAttribute("href", "?light");
+            document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-sun fa-stack-1x");
+        }
+
+        function activateLightMode() {
+            r.style.setProperty('--primary-color', '#40826D');
+            r.style.setProperty('--secondary-color', 'white');
+            r.style.setProperty('--text-color', 'black');
+            r.style.setProperty('--background-color', 'white');
+            document.querySelector('#light-dark-toggle').setAttribute("href", "?dark");
+            document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-moon fa-stack-1x");
+        }
+
+        var query = window.location.search;
+        query = query.replace("?", '');
+        if (query == "dark") {
+            activateDarkMode();
+        } else if (query == "light") {
+            activateLightMode();
+        } else {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", e => {
+                if (e.matches) {
+                    document.querySelector('#light-dark-toggle').setAttribute("href", "?light");
+                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-sun fa-stack-1x");
+                } else {
+                    document.querySelector('#light-dark-toggle').setAttribute("href", "?dark");
+                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-moon fa-stack-1x");
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>

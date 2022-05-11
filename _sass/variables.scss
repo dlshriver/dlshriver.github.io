@@ -1,2 +1,26 @@
-$primary-color: #40826D;
-$text-color: #000000;
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color: #40826D;
+        --secondary-color: #ffffff;
+        --text-color: #000000;
+        --background-color: #ffffff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #40826D;
+        --secondary-color: #ffffff;
+        --text-color: #ffffff;
+        --background-color: #000000;
+    }
+}
+
+@media print {
+    :root {
+        --primary-color: #40826D !important;
+        --secondary-color: #ffffff !important;
+        --text-color: #000000 !important;
+        --background-color: #ffffff !important;
+    }
+}

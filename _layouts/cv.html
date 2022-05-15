@@ -98,7 +98,7 @@
 
     </div>
 
-    <a id="light-dark-toggle" class="no-print" href="?light">
+    <a id="light-dark-toggle" class="no-print" href="javascript:location.replace('?light')">
         <span class="fa-stack" style="vertical-align: top;">
             <i class="far fa-fw fa-circle fa-stack-2x"></i>
             <i class="fa-solid fa-sun fa-stack-1x"></i>
@@ -119,7 +119,7 @@
             r.style.setProperty('--secondary-color', 'white');
             r.style.setProperty('--text-color', 'white');
             r.style.setProperty('--background-color', 'black');
-            document.querySelector('#light-dark-toggle').setAttribute("href", "?light");
+            document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?light')");
             document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-sun fa-stack-1x");
         }
 
@@ -128,7 +128,7 @@
             r.style.setProperty('--secondary-color', 'white');
             r.style.setProperty('--text-color', 'black');
             r.style.setProperty('--background-color', 'white');
-            document.querySelector('#light-dark-toggle').setAttribute("href", "?dark");
+            document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?dark')");
             document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-moon fa-stack-1x");
         }
 
@@ -141,10 +141,10 @@
         } else {
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", e => {
                 if (e.matches) {
-                    document.querySelector('#light-dark-toggle').setAttribute("href", "?light");
+                    document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?light')");
                     document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-sun fa-stack-1x");
                 } else {
-                    document.querySelector('#light-dark-toggle').setAttribute("href", "?dark");
+                    document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?dark')");
                     document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-moon fa-stack-1x");
                 }
             })

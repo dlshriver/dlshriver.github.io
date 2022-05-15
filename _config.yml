@@ -1,3 +1,5 @@
+url: "https://dlshriver.com"
+
 collections:
   artifacts:
     output: true
@@ -15,6 +17,10 @@ defaults:
       type: "publications"
     values:
       layout: "publication"
+  - scope:
+      path: "files/**"
+    values:
+      sitemap: false
 
 analytics:
   google:

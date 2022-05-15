@@ -4,6 +4,7 @@
     {% capture url_len %}{{ page.url | size | minus: 5 }}{% endcapture %}
     {% capture new_url %}/assets{{ page.url | slice: 0, url_len }}{% endcapture %}
     <meta http-equiv="refresh" content="0; url='{{new_url}}'" />
+    <link rel="canonical" href="{{ new_url | absolute_url }}" />
 </head>
 
 <body>

@@ -2,11 +2,13 @@ name: "David Shriver"
 image: "assets/images/profile.jpg"
 email: "davidshriver@outlook.com"
 address: "Charlottesville, VA, USA"
-bio: "<span class='no-print'>I am currently a PhD student at the University of Virginia, and a member of [LESS Lab](https://less-lab-uva.github.io/).</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of cyber-physical systems."
+bio: "<span class='no-print'>I am a PhD student at the University of Virginia, and member of [LESS Lab](https://less-lab-uva.github.io/).</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical systems."
 description: "Personal website for David Shriver."
 keywords:
   - research
+  - publications
   - neural networks
+  - machine learning
   - verification
   - falsification
   - software engineering
@@ -36,22 +38,25 @@ education:
     date: May 2016
     school: University of Nebraska-Lincoln
 positions:
-  - employer: Langley Research Center, NASA
-    title: Research Intern
-    duration: "June 2021 &mdash; August 2021"
   - employer: Department of Computer Science, University of Virginia
     title: Research Assistant
     duration: "August 2018 &mdash; Present"
+    description: "Researching and developing techniques for increasing the applicability of state-of-the art verification tools for neural networks to improve the safety and correctness of systems with high costs of failure, such as autonomous vehicles."
+  - employer: Langley Research Center, NASA
+    title: Research Intern
+    duration: "June 2021 &mdash; August 2021"
+    description: "Developed an approach to transform temporal behavioral properties of neural networks to local robustness properties to enable application of a plethora of available tools and investigated the feasibility of this transformation in the context of neural networks trained for aircraft collision avoidance."
   - employer: Department of Computer Science and Engineering, University of Nebraska-Lincoln
     title: Research Assistant
     duration: "March 2014 &mdash; July 2018"
+    description: "Developed approaches for assessing the quality and stability of recommender systems."
 awards:
   - award: "John A. Stankovic Outstanding Graduate Research Award"
     date: May 2022
   - award: "University of Nebraska-Lincoln, Highest Distinction"
     date: May 2016
   - award: "University of Nebraska-Lincoln, Computer Engineering Outstanding Undergraduate Senior"
-    date: 2016
+    date: May 2016
 service:
   - "ASE 2022: Committee Member in Program Committee within Artifact Evaluation-track"
   - "ISSTA 2021: Committee Member in Artifact Evaluation Committee within the Artifact Evaluation-track"

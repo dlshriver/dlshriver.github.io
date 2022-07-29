@@ -15,6 +15,7 @@ keywords:
   - python
 available:
   - "I'm on the job market!"
+cv: assets/files/cv.pdf # link/path to downloadable CV
 social:
   docker-username: "dlshriver"
   github-username: "dlshriver"

@@ -40,3 +40,12 @@
     <i class="fab fa-fw fa-youtube fa-2x"></i>
 </a>
 {% endif %}
+
+{% if site.data.profile.cv %}
+<a href="{{site.data.profile.cv}}" class="social-link" title="CV">
+    <span class="fa-stack" style="vertical-align: top;">
+        <i class="far fa-fw fa-circle fa-stack-2x"></i>
+        <i class="ai ai-fw ai-cv ai-stack-1x halfem-increase"></i>
+    </span>
+</a>
+{% endif %}

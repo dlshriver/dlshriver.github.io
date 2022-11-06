@@ -37,15 +37,6 @@
             </section>
 
             <div class="title-bar no-print">
-                {% if site.data.profile.email %}
-                <a href="mailto:{{ site.data.profile.email }}" class="social-link" title="Email me!">
-                    <span class="fa-stack" style="vertical-align: top;">
-                        <i class="far fa-fw fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-fw fa-envelope fa-stack-1x"></i>
-                    </span>
-                </a>
-                {% endif %}
-
                 {% include social-bar.html %}
             </div>
 
@@ -84,7 +75,8 @@
 
     </div>
 
-    <a id="light-dark-toggle" class="no-print" href="javascript:location.replace('?light')">
+    <a id="light-dark-toggle" class="no-print" href="javascript:location.replace('?light')"
+        aria-label="Toggle light/dark mode." title="Toggle light/dark mode.">
         <span class="fa-stack" style="vertical-align: top;">
             <i class="far fa-fw fa-circle fa-stack-2x"></i>
             <i class="fa-solid fa-sun fa-stack-1x"></i>

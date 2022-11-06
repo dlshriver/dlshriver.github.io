@@ -1,35 +1,93 @@
+.inverse {
+    color: var(--background-color);
+}
+
 .fa-docker:before {
-    content: "| Docker |"
+    content: "D";
 }
 
 .fa-envelope:before {
-    content: "| Email |"
+    content: "E"
 }
 
 .fa-github:before {
-    content: "| Github |"
+    content: "GH"
 }
 
 .ai-google-scholar:before {
-    content: "| Google Scholar |"
+    content: "G"
 }
 
 .fa-linkedin:before {
-    content: "| LinkedIn |"
+    content: "L"
 }
 
 .ai-orcid:before {
-    content: "| ORCID |"
+    content: "O"
+}
+
+.ai-cv:before {
+    content: "CV"
 }
 
 .fa-print:before {
-    content: "| Print |"
+    content: "P"
 }
 
 .fa-youtube:before {
-    content: "| YouTube |"
+    content: "Y"
 }
 
-.halfem-increase {
-    font-size: 1.5em;
+.ai-2x,
+.fa-2x {
+    font-size: 2em
+}
+
+.ai-fw,
+.fa-fw {
+    text-align: center;
+    width: 1.25em
+}
+
+.ai-stack,
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.5em;
+}
+
+.ai-stack-1x,
+.ai-stack-2x,
+.fa-stack-1x,
+.fa-stack-2x {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.ai-stack-1x,
+.fa-stack-1x {
+    line-height: inherit
+}
+
+.ai-stack-2x,
+.fa-stack-2x {
+    font-size: 2em
+}
+
+.ai,
+.fab,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-rendering: auto;
 }

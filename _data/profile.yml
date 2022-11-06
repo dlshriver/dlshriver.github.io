@@ -13,8 +13,8 @@ keywords:
   - falsification
   - software engineering
   - python
-available:
-  - "I'm on the job market!"
+# available:
+#   - "I'm on the job market!"
 cv: assets/files/cv.pdf # link/path to downloadable CV
 social:
   docker-username: "dlshriver"

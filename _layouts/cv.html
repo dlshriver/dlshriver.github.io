@@ -14,8 +14,12 @@
         {% endif %}
 
         <header class="cv-header">
-            <img src="{{ site.data.profile.image }}" alt="Profile picture." class="profile-photo no-print"
-                itemprop="image" width="150px" height="150px">
+            <picture>
+                <source type="image/webp" srcset="assets/images/profile.webp 1x, assets/images/profile-large.webp 2x">
+                <source type="image/jpeg" srcset="assets/images/profile.jpg 1x, assets/images/profile-large.jpg 2x">
+                <img src="assets/images/profile.jpg" alt="Profile picture." class="profile-photo no-print"
+                    itemprop="image" width="150px" height="150px">
+            </picture>
 
             <h1 class="header-name" itemprop="name">{{ site.data.profile.name }}</h1>
 
@@ -77,10 +81,7 @@
 
     <a id="light-dark-toggle" class="no-print" href="javascript:location.replace('?light')"
         aria-label="Toggle light/dark mode." title="Toggle light/dark mode.">
-        <span class="fa-stack" style="vertical-align: top;">
-            <i class="far fa-fw fa-circle fa-stack-2x"></i>
-            <i class="fa-solid fa-sun fa-stack-1x"></i>
-        </span>
+        <i class="fa-solid fa-sun fa-1x"></i>
     </a>
     <noscript>
         <style type="text/css">
@@ -98,7 +99,7 @@
             r.style.setProperty('--text-color', 'white');
             r.style.setProperty('--background-color', 'black');
             document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?light')");
-            document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-sun fa-stack-1x");
+            document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-sun fa-1x");
         }
 
         function activateLightMode() {
@@ -107,7 +108,7 @@
             r.style.setProperty('--text-color', 'black');
             r.style.setProperty('--background-color', 'white');
             document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?dark')");
-            document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-moon fa-stack-1x");
+            document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-moon fa-1x");
         }
 
         var query = window.location.search;
@@ -120,10 +121,10 @@
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", e => {
                 if (e.matches) {
                     document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?light')");
-                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-sun fa-stack-1x");
+                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-sun fa-1x");
                 } else {
                     document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?dark')");
-                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[1].setAttribute("class", "fa-solid fa-moon fa-stack-1x");
+                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-moon fa-1x");
                 }
             })
         }

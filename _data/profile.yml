@@ -1,5 +1,4 @@
 name: "David Shriver"
-image: "assets/images/profile.jpg"
 email: "davidshriver@outlook.com"
 address: "Charlottesville, VA, USA"
 bio: "<span class='no-print'>I am a PhD student at the University of Virginia, and member of [LESS Lab](https://less-lab-uva.github.io/).</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical systems."
@@ -15,7 +14,7 @@ keywords:
   - python
 # available:
 #   - "I'm on the job market!"
-cv: assets/files/cv.pdf # link/path to downloadable CV
+# cv: assets/files/cv.pdf # link/path to downloadable CV
 social:
   docker-username: "dlshriver"
   github-username: "dlshriver"

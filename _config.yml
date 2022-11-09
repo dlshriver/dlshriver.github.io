@@ -22,10 +22,10 @@ defaults:
     values:
       sitemap: false
 
-analytics:
-  google:
-    # CHANGE THIS IF YOU USE THIS TEMPLATE!
-    tracking_id: "G-RVTY8MQ9WB"
+# analytics:
+#   google:
+#     # CHANGE THIS IF YOU USE THIS TEMPLATE!
+#     tracking_id: "notrack"
 
 plugins:
   - jekyll-sitemap

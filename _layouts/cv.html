@@ -21,9 +21,9 @@
                     itemprop="image" width="150px" height="150px">
             </picture>
 
-            <h1 class="header-name" itemprop="name">{{ site.data.profile.name }}</h1>
+            <h1 class="header-name" itemprop="name">{{site.data.profile.name}}</h1>
 
-            <section class="cv-section print-only">
+            <section id="contact" class="cv-section print-only">
                 <header class="section-header">
                     <h2>Contact</h2>
                 </header>
@@ -40,10 +40,12 @@
                 </div>
             </section>
 
-            <div class="title-bar no-print">
+            <div id="social" class="title-bar no-print">
                 {% include social-bar.html %}
             </div>
+        </header>
 
+        <section id="bio" class="cv-section">
             <header class="section-header print-only">
                 <h2>Research Interests</h2>
             </header>
@@ -57,7 +59,8 @@
                 {{site.data.profile.available}}
             </div>
             {% endif %}
-        </header>
+        </section>
+
 
         {% include education.html %}
 
@@ -73,8 +76,11 @@
     </div>
 
     <footer class="cv-footer no-print">
-        <p>&copy; David Shriver 2022</p>
-        <a href="/sitemap.xml">Sitemap</a>
+        <a href="/sitemap.xml" style="float:right">Sitemap</a>
+        <span style="float:left">
+            Site designed by <a href="https://github.com/dlshriver/dlshriver.github.io">David
+                Shriver</a>
+        </span>
     </footer>
 
     </div>

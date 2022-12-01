@@ -1,54 +1,51 @@
 {% if site.data.profile.email %}
-<a href="mailto:{{ site.data.profile.email }}" class="social-link" title="Email me!" height="2em">
-    <i class="fas fa-fw fa-2x fa-envelope"></i>
+<a href="mailto:{{ site.data.profile.email }}" class="social-link" title="Email me!">
+    <i class="icon-email"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.orcid %}
 <a href="https://orcid.org/{{ site.data.profile.social.orcid }}" class="social-link" title="ORCID Profile">
-    <i class="ai ai-fw ai-2x ai-orcid"></i>
+    <i class="icon-orcid"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.google-scholar %}
 <a href="https://scholar.google.com/citations?user={{ site.data.profile.social.google-scholar }}" class="social-link"
     title="Google Scholar Profile">
-    <span class="fa-stack" style="vertical-align:top;">
-        <i class="fas fa-fw fa-stack-2x fa-circle"></i>
-        <i class="ai ai-stack-2x ai-google-scholar inverse"></i>
-    </span>
+    <i class="icon-googlescholar"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.github-username %}
 <a href="https://github.com/{{ site.data.profile.social.github-username }}" class="social-link" title="GitHub Profile">
-    <i class="fab fa-fw fa-2x fa-github"></i>
+    <i class="icon-github"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.docker-username %}
 <a href="https://hub.docker.com/u/{{ site.data.profile.social.docker-username }}" class="social-link"
     title="Docker Profile">
-    <i class="fab fa-fw fa-2x fa-docker"></i>
+    <i class="icon-docker"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.linkedin-username %}
 <a href="https://www.linkedin.com/in/{{ site.data.profile.social.linkedin-username }}" class="social-link"
     title="LinkedIn Profile">
-    <i class="fab fa-fw fa-2x fa-linkedin"></i>
+    <i class="icon-linkedin"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.youtube-channel %}
 <a href="https://www.youtube.com/@{{ site.data.profile.social.youtube-channel }}" class="social-link"
     title="YouTube Channel">
-    <i class="fab fa-fw fa-2x fa-youtube"></i>
+    <i class="icon-youtube"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.cv %}
 <a href="{{site.data.profile.cv}}" class="social-link" title="CV">
-    <i class="ai ai-fw ai-2x ai-cv"></i>
+    <span class="icon icon-circle">CV</icon>
 </a>
 {% endif %}

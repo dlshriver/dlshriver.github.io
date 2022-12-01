@@ -4,13 +4,22 @@
 {% include head.html %}
 
 <body>
+    <a id="toggle-light" class="no-print" href="javascript:location.replace('?light')" aria-label="Turn on light mode."
+        title="Turn on light mode.">
+        <i class="icon-sun" style="font-size: 1.75em;"></i>
+    </a>
+    <a id="toggle-dark" class="no-print" href="javascript:location.replace('?dark')" aria-label="Turn on dark mode."
+        title="Turn on dark mode.">
+        <i class="icon-moon" style="font-size: 1.75em;"></i>
+    </a>
+
     <div itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="sameAs" content="{{ site.url }}" />
+        <meta itemprop="sameAs" content="{{ site.url }}">
         {% if site.data.profile.telephone %}
-        <meta itemprop="telephone" content="{{ site.data.profile.telephone }}" />
+        <meta itemprop="telephone" content="{{ site.data.profile.telephone }}">
         {% endif %}
         {% if site.data.profile.address %}
-        <meta itemprop="address" content="{{ site.data.profile.address }}" />
+        <meta itemprop="address" content="{{ site.data.profile.address }}">
         {% endif %}
 
         <header class="cv-header">
@@ -18,15 +27,15 @@
                 <source type="image/webp" srcset="assets/images/profile.webp 1x, assets/images/profile-large.webp 2x">
                 <source type="image/jpeg" srcset="assets/images/profile.jpg 1x, assets/images/profile-large.jpg 2x">
                 <img src="assets/images/profile.jpg" alt="Profile picture." class="profile-photo no-print"
-                    itemprop="image" width="150px" height="150px">
+                    itemprop="image" width="150" height="150">
             </picture>
 
             <h1 class="header-name" itemprop="name">{{site.data.profile.name}}</h1>
 
-            <section id="contact" class="cv-section print-only">
-                <header class="section-header">
+            <div id="contact" class="cv-section print-only">
+                <div class="section-header">
                     <h2>Contact</h2>
-                </header>
+                </div>
                 {% if site.data.profile.telephone %}
                 <div class="cv-item">
                     Phone: {{ site.data.profile.telephone }}
@@ -38,7 +47,7 @@
                 <div class="cv-item">
                     Website: {{ site.url }}
                 </div>
-            </section>
+            </div>
 
             <div id="social" class="title-bar no-print">
                 {% include social-bar.html %}
@@ -83,56 +92,26 @@
         </span>
     </footer>
 
-    </div>
-
-    <a id="light-dark-toggle" class="no-print" href="javascript:location.replace('?light')"
-        aria-label="Toggle light/dark mode." title="Toggle light/dark mode.">
-        <i class="fa-solid fa-sun fa-1x"></i>
-    </a>
-    <noscript>
-        <style type="text/css">
-            #light-dark-toggle {
-                display: none !important;
-            }
-        </style>
-    </noscript>
     <script>
         var r = document.querySelector(':root');
-
-        function activateDarkMode() {
+        var query = window.location.search;
+        query = query.replace("?", '');
+        if (query == "dark") {
             r.style.setProperty('--primary-color', '#40826D');
             r.style.setProperty('--secondary-color', 'white');
             r.style.setProperty('--text-color', 'white');
             r.style.setProperty('--background-color', 'black');
-            document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?light')");
-            document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-sun fa-1x");
-        }
-
-        function activateLightMode() {
+            r.style.setProperty('--invert-filter', 'invert(1)');
+            document.querySelector('#toggle-dark').style.display = "none";
+            document.querySelector('#toggle-light').style.display = "inline-block";
+        } else if (query == "light") {
             r.style.setProperty('--primary-color', '#40826D');
             r.style.setProperty('--secondary-color', 'white');
             r.style.setProperty('--text-color', 'black');
             r.style.setProperty('--background-color', 'white');
-            document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?dark')");
-            document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-moon fa-1x");
-        }
-
-        var query = window.location.search;
-        query = query.replace("?", '');
-        if (query == "dark") {
-            activateDarkMode();
-        } else if (query == "light") {
-            activateLightMode();
-        } else {
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", e => {
-                if (e.matches) {
-                    document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?light')");
-                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-sun fa-1x");
-                } else {
-                    document.querySelector('#light-dark-toggle').setAttribute("href", "javascript:location.replace('?dark')");
-                    document.querySelector("#light-dark-toggle").querySelectorAll("i")[0].setAttribute("class", "fa-solid fa-moon fa-1x");
-                }
-            })
+            r.style.setProperty('--invert-filter', 'invert(0)');
+            document.querySelector('#toggle-dark').style.display = "inline-block";
+            document.querySelector('#toggle-light').style.display = "none";
         }
     </script>
 </body>

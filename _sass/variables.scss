@@ -4,6 +4,11 @@
         --secondary-color: #ffffff;
         --text-color: #000000;
         --background-color: #ffffff;
+        --invert-filter: invert(0);
+    }
+
+    #toggle-light {
+        display: none;
     }
 }
 
@@ -13,6 +18,11 @@
         --secondary-color: #ffffff;
         --text-color: #ffffff;
         --background-color: #000000;
+        --invert-filter: invert(1);
+    }
+
+    #toggle-dark {
+        display: none;
     }
 }
 
@@ -22,5 +32,6 @@
         --secondary-color: #ffffff !important;
         --text-color: #000000 !important;
         --background-color: #ffffff !important;
+        --invert-filter: invert(0) !important;
     }
 }

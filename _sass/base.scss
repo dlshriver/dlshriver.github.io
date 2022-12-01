@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-
 html {
     background: var(--background-color);
-    font-display: swap;
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-size: 1.16667em;
 }
@@ -27,7 +25,8 @@ a {
     font-weight: bold;
 }
 
-#light-dark-toggle {
+#toggle-dark,
+#toggle-light {
     position: absolute;
     top: 0;
     right: 0;

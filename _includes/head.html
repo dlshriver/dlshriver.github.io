@@ -11,24 +11,20 @@
     <title>{{ site.data.profile.name }}</title>
     {% endif %}
 
-    <style type="text/css">
-        {% capture include_to_scssify %}
-            {% include default_style.scss %}
-        {% endcapture %}
-        {{include_to_scssify | scssify }}
-    </style>
-
-    <link rel="preload" as="style" href="/assets/css/academicons.min.css"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" as="style" href="/assets/css/fontawesome.supermin.css"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="font" type="font/woff" href="assets/fonts/icomoon.woff" crossorigin="anonymous">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible&display=swap"
         onload="this.onload=null;this.rel='stylesheet'">
 
+    {% include default_style.html %}
+
     <noscript>
-        <link rel="stylesheet" href="/assets/css/academicons.min.css">
-        <link rel="stylesheet" href="/assets/css/fontawesome.supermin.css">
-        <link href='https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible&display=swap' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+        <style>
+            #toggle-dark,
+            #toggle-light {
+                display: none !important;
+            }
+        </style>
     </noscript>
 
     {% include analytics.html %}

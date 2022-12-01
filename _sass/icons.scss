@@ -1,93 +1,97 @@
-.inverse {
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0em 0.1em;
+    width: 2em;
+    height: 2em;
+}
+
+img.icon {
+    filter: var(--invert-filter);
     color: var(--background-color);
 }
 
-.fa-docker:before {
-    content: "D";
+svg.icon {
+    filter: var(--invert-filter);
+    color: var(--background-color);
 }
 
-.fa-envelope:before {
-    content: "E"
-}
-
-.fa-github:before {
-    content: "GH"
-}
-
-.ai-google-scholar:before {
-    content: "G"
-}
-
-.fa-linkedin:before {
-    content: "L"
-}
-
-.ai-orcid:before {
-    content: "O"
-}
-
-.ai-cv:before {
-    content: "CV"
-}
-
-.fa-print:before {
-    content: "P"
-}
-
-.fa-youtube:before {
-    content: "Y"
-}
-
-.ai-2x,
-.fa-2x {
-    font-size: 2em
-}
-
-.ai-fw,
-.fa-fw {
-    text-align: center;
-    width: 1.25em
-}
-
-.ai-stack,
-.fa-stack {
-    display: inline-block;
-    height: 2em;
+span.icon {
+    font-size: 1em;
     line-height: 2em;
-    position: relative;
-    vertical-align: middle;
-    width: 2.5em;
-}
-
-.ai-stack-1x,
-.ai-stack-2x,
-.fa-stack-1x,
-.fa-stack-2x {
-    left: 0;
-    position: absolute;
     text-align: center;
-    width: 100%;
 }
 
-.ai-stack-1x,
-.fa-stack-1x {
-    line-height: inherit
+span.icon-circle {
+    font-size: 0.8em;
+    width: 2.5em;
+    height: 2.5em;
+    border: 0.25em solid var(--text-color);
+    border-radius: 1.25em;
 }
 
-.ai-stack-2x,
-.fa-stack-2x {
-    font-size: 2em
-}
-
-.ai,
-.fab,
-.fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
+@font-face {
+    font-family: 'icomoon';
+    src: url('assets/fonts/icomoon.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
     font-style: normal;
+    font-stretch: condensed;
+}
+
+i[class*=icon-] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.2em;
+    height: auto;
+
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
     font-variant: normal;
-    font-weight: 400;
+    text-transform: none;
+    font-size: 2em;
     line-height: 1;
-    text-rendering: auto;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+    content: "\e906";
+}
+
+.icon-linkedin:before {
+    content: "\e900";
+}
+
+.icon-orcid:before {
+    content: "\e901";
+}
+
+.icon-github:before {
+    content: "\e902";
+}
+
+.icon-youtube:before {
+    content: "\e903";
+}
+
+.icon-googlescholar:before {
+    content: "\e904";
+}
+
+.icon-docker:before {
+    content: "\e905";
+}
+
+.icon-sun:before {
+    content: "\e907";
+}
+
+.icon-moon:before {
+    content: "\e908";
 }

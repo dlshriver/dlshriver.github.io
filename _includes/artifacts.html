@@ -5,11 +5,11 @@
     {% for artifact in site.artifacts %}
     <div class="cv-item">
         <div itemscope itemtype="https://schema.org/SoftwareSourceCode">
-            <meta itemprop="author" content="{{ site.data.profile.name }}" />
-            <meta itemprop="codeRepository" content="{{ artifact.repository_url }}" />
+            <meta itemprop="author" content="{{ site.data.profile.name }}">
+            <meta itemprop="codeRepository" content="{{ artifact.repository_url }}">
             {% if artifact.programming_language %}
-            <meta itemprop="programmingLanguage" content="{{ artifact.programming_language }}" />
-            <meta itemprop="abstract" content="{{ artifact.description }}" />
+            <meta itemprop="programmingLanguage" content="{{ artifact.programming_language }}">
+            <meta itemprop="abstract" content="{{ artifact.description }}">
             {% endif %}
             <!-- <a href="{{ artifact.url }}">
                 <h3 class="cv-item-title" itemprop="name">{{ artifact.name }}</h3>

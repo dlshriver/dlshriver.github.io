@@ -5,16 +5,16 @@
     {% capture boldauthor %}<b>{{site.data.profile.name}}</b>{% endcapture %}
     {% for publication in site.publications reversed %}
     <div class="cv-item no-print" itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <meta itemprop="datePublished" content="{{publication.date}}" />
+        <meta itemprop="datePublished" content="{{publication.date}}">
         <!-- <a href="{{ publication.url }}">
             <h3 class="cv-item-title" itemprop="name">{{ publication.title }}</h3>
         </a> -->
         <h3 class="cv-item-title" itemprop="name">{{ publication.title }}</h3>
-        <br />
+        <br>
         <div class="cv-item-details">
             {{ publication.author | join: ", " | replace: "David Shriver", "<b>David Shriver</b>" }}
         </div>
-        <br />
+        <br>
         {% if publication.venue %}
         <div class="cv-item-details">
             {{ publication.venue }}
@@ -24,7 +24,7 @@
         <div class="cv-item-details">
             {{ publication.year }}
         </div>
-        <br />
+        <br>
         {% if publication.downloads %}
         <div class="cv-item-details">
             {% for download in publication.downloads %}

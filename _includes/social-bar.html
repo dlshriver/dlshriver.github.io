@@ -5,40 +5,41 @@
 {% endif %}
 
 {% if site.data.profile.social.orcid %}
-<a href="https://orcid.org/{{ site.data.profile.social.orcid }}" class="social-link" title="ORCID Profile">
+<a rel="me" href="https://orcid.org/{{ site.data.profile.social.orcid }}" class="social-link" title="ORCID Profile">
     <i class="icon-orcid"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.google-scholar %}
-<a href="https://scholar.google.com/citations?user={{ site.data.profile.social.google-scholar }}" class="social-link"
-    title="Google Scholar Profile">
+<a rel="me" href="https://scholar.google.com/citations?user={{ site.data.profile.social.google-scholar }}"
+    class="social-link" title="Google Scholar Profile">
     <i class="icon-googlescholar"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.github-username %}
-<a href="https://github.com/{{ site.data.profile.social.github-username }}" class="social-link" title="GitHub Profile">
+<a rel="me" href="https://github.com/{{ site.data.profile.social.github-username }}" class="social-link"
+    title="GitHub Profile">
     <i class="icon-github"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.docker-username %}
-<a href="https://hub.docker.com/u/{{ site.data.profile.social.docker-username }}" class="social-link"
+<a rel="me" href="https://hub.docker.com/u/{{ site.data.profile.social.docker-username }}" class="social-link"
     title="Docker Profile">
     <i class="icon-docker"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.linkedin-username %}
-<a href="https://www.linkedin.com/in/{{ site.data.profile.social.linkedin-username }}" class="social-link"
+<a rel="me" href="https://www.linkedin.com/in/{{ site.data.profile.social.linkedin-username }}" class="social-link"
     title="LinkedIn Profile">
     <i class="icon-linkedin"></i>
 </a>
 {% endif %}
 
 {% if site.data.profile.social.youtube-channel %}
-<a href="https://www.youtube.com/@{{ site.data.profile.social.youtube-channel }}" class="social-link"
+<a rel="me" href="https://www.youtube.com/@{{ site.data.profile.social.youtube-channel }}" class="social-link"
     title="YouTube Channel">
     <i class="icon-youtube"></i>
 </a>

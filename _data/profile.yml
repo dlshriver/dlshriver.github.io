@@ -1,7 +1,7 @@
 name: "David Shriver"
 email: "davidshriver@outlook.com"
 address: "Charlottesville, VA, USA"
-bio: "<span class='no-print'>I am a PhD student at the University of Virginia, and member of [LESS Lab](https://less-lab-uva.github.io/).</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical systems."
+bio: "<span class='no-print'>I am a machine learning research scientist in the AI Division of the Software Engineering Institute at Carnegie Mellon University.</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical systems."
 description: "Personal website for David Shriver."
 keywords:
   - research
@@ -38,9 +38,13 @@ education:
     date: May 2016
     school: University of Nebraska-Lincoln
 positions:
+  - employer: Software Engineering Institute
+    title: Machine Learning Research Scientist
+    duration: "January 2022 &mdash; Present"
+    description: "Work on projects to advance, establish, and promote the discipline of AI Engineering."
   - employer: Department of Computer Science, University of Virginia
     title: Research Assistant
-    duration: "August 2018 &mdash; Present"
+    duration: "August 2018 &mdash; December 2022"
     description: "Researching and developing techniques for increasing the applicability of state-of-the art verification tools for neural networks to improve the safety and correctness of systems with high costs of failure, such as autonomous vehicles."
   - employer: Langley Research Center, NASA
     title: Research Intern

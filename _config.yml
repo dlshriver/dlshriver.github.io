@@ -26,6 +26,9 @@ defaults:
 #   google:
 #     # CHANGE THIS IF YOU USE THIS TEMPLATE!
 #     tracking_id: "notrack"
+#   microsoft:
+#     # CHANGE THIS IF YOU USE THIS TEMPLATE!
+#     tracking_id: "notrack"
 
 plugins:
   - jekyll-sitemap

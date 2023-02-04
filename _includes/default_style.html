@@ -1,6 +1,6 @@
 <style>
-    {% capture include_to_scssify %}
-        {% include default_style.scss %}
-    {% endcapture %}
-    {{ include_to_scssify | scssify }}
+    {% capture include_to_scssify -%}
+        {%- include default_style.scss -%}
+    {%- endcapture -%}
+    {{- include_to_scssify | scssify -}}
 </style>

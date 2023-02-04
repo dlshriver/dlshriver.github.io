@@ -4,15 +4,25 @@
     </header>
     {% for education in site.data.profile.education %}
     <div class="cv-item">
-        <h3 class="cv-item-title" itemprop="award">
-            {{ education.degree }}
+        <h3 class="cv-item-title">
+            <span itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                <span itemprop="name">{{ education.degree }}</span>
+                <span itemprop="credentialCategory" itemscope itemtype="http://schema.org/DefinedTerm">
+                    <meta itemprop="name" content="Degree" />
+                    <link itemprop="url" href="https://purl.org/ctdl/terms/Degree" />
+                    <span itemprop="inDefinedTermSet" itemscope itemtype="https://schema.org/DefinedTermSet">
+                        <meta itemprop="name" content="Credential Transparency Description Language" />
+                        <link itemprop="url" content="https://purl.org/ctdl/terms/" />
+                    </span>
+                </span>
+            </span>
         </h3>
         &bull;
         <div class="cv-item-details">
             {{ education.date }}
         </div>
         &bull;
-        <div class="cv-item-details" itemscope itemprop="alumniOf" itemtype="https://schema.org/CollegeOrUniversity">
+        <div class="cv-item-details" itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity">
             <div class="cv-item-details" itemprop="name">
                 {{ education.school }}
             </div>

@@ -1,8 +1,10 @@
 name: "David Shriver"
 email: "davidshriver@outlook.com"
-address: "Charlottesville, VA, USA"
-bio: "<span class='no-print'>I am a machine learning research scientist in the AI Division of the Software Engineering Institute at Carnegie Mellon University.</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical systems."
-description: "Personal website for David Shriver."
+address: "Pittsburgh, PA, USA"
+position: "Research Scientist"
+affiliation: "Software Engineering Institute"
+description: "Machine learning research scientist in the AI Division of the Software Engineering Institute at Carnegie Mellon University, interested in safe and reliable AI."
+bio: "<span class='no-print'>I am a machine learning research scientist in the AI Division of the Software Engineering Institute at Carnegie Mellon University.</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical and autonomous systems."
 keywords:
   - research
   - publications
@@ -62,6 +64,7 @@ awards:
   - award: "University of Nebraska-Lincoln, Computer Engineering Outstanding Undergraduate Senior"
     date: May 2016
 service:
+  - "TOSEM 2023: Reviewer"
   - "ASE 2022: Committee Member in Program Committee within Artifact Evaluation-track"
   - "ISSTA 2021: Committee Member in Artifact Evaluation Committee within the Artifact Evaluation-track"
   - "ISSTA 2021 Co-reviewer"

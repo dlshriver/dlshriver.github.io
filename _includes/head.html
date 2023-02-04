@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" />
 
-    {% if page.title %}
+    <meta property="og:title" content="David Shriver" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ 'assets/images/profile.jpg' | absolute_url }}" />
+    <meta property="og:description" content="{{ site.data.profile.description }}">
+
+    {% if page.title -%}
     <title>{{ page.title }}</title>
-    {% else %}
-    <title>{{ site.data.profile.name }}</title>
-    {% endif %}
+    {%- else -%}
+    <title>{{ site.data.profile.name }}{% if site.data.profile.position %} - {{ site.data.profile.position }}{% endif
+        -%}
+    </title>
+    {%- endif %}
 
     {% include default_style.html %}
 
@@ -24,5 +32,5 @@
         </style>
     </noscript>
 
-    {% include analytics.html %}
+    {%- include analytics.html -%}
 </head>

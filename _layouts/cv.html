@@ -21,6 +21,9 @@
         {% if site.data.profile.address %}
         <meta itemprop="address" content="{{ site.data.profile.address }}">
         {% endif %}
+        {% if site.data.profile.affiliation %}
+        <meta itemprop="affiliation" content="{{ site.data.profile.affiliation }}">
+        {% endif %}
 
         <header class="cv-header">
             <picture>

@@ -4,7 +4,7 @@
     </header>
     {% for award in site.data.profile.awards %}
     <div class="cv-item">
-        &bullet; {{ award.award }}, {{ award.date }}
+        &bullet; <span itemprop="award">{{ award.award }}</span>, {{ award.date }}
     </div>
     {% endfor %}
 </section>

@@ -4,7 +4,7 @@
     </header>
     {% for publication in site.publications reversed %}
     <div class="cv-item no-print" itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <meta itemprop="datePublished" content="{{publication.date}}">
+        <meta itemprop="datePublished" content="{{publication.date | date: '%Y-%m-%d'}}">
         <meta itemprop="headline" content="{{publication.title}}">
         <h3 class="cv-item-title" itemprop="name">{{ publication.title }}</h3>
         <br>

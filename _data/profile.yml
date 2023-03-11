@@ -3,8 +3,8 @@ email: "davidshriver@outlook.com"
 address: "Pittsburgh, PA, USA"
 position: "Research Scientist"
 affiliation: "Software Engineering Institute"
-description: "Machine learning research scientist in the AI Division of the Software Engineering Institute at Carnegie Mellon University, interested in safe and reliable AI."
-bio: "<span class='no-print'>I am a machine learning research scientist in the AI Division of the Software Engineering Institute at Carnegie Mellon University.</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical and autonomous systems."
+description: "Machine learning research scientist in the AI Division of the Software Engineering Institute (SEI) at Carnegie Mellon University (CMU), interested in safe and reliable AI."
+bio: "<span class='no-print'>I am a machine learning research scientist in the AI Division of the Software Engineering Institute (SEI) at Carnegie Mellon University (CMU).</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical and autonomous systems."
 keywords:
   - research
   - publications
@@ -40,7 +40,7 @@ education:
     date: May 2016
     school: University of Nebraska-Lincoln
 positions:
-  - employer: Software Engineering Institute
+  - employer: Software Engineering Institute (SEI)
     title: Machine Learning Research Scientist
     duration: "January 2022 &mdash; Present"
     description: "Work on projects to advance, establish, and promote the discipline of AI Engineering."
@@ -57,7 +57,9 @@ positions:
     duration: "March 2014 &mdash; July 2018"
     description: "Developed approaches for assessing the quality and stability of recommender systems."
 awards:
-  - award: "John A. Stankovic Outstanding Graduate Research Award"
+  - award: "ACM SIGSOFT Outstanding Doctoral Dissertation"
+    date: March 2023
+  - award: "John A. Stankovic Outstanding Graduate Research"
     date: May 2022
   - award: "University of Nebraska-Lincoln, Highest Distinction"
     date: May 2016

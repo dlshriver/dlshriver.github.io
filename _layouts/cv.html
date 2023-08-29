@@ -6,11 +6,11 @@
 <body>
     <a id="toggle-light" class="no-print" href="javascript:location.replace('?light')" aria-label="Turn on light mode."
         title="Turn on light mode.">
-        <i class="icon-sun" style="font-size: 1.75em;"></i>
+        <i class="icon-sun"></i>
     </a>
     <a id="toggle-dark" class="no-print" href="javascript:location.replace('?dark')" aria-label="Turn on dark mode."
         title="Turn on dark mode.">
-        <i class="icon-moon" style="font-size: 1.75em;"></i>
+        <i class="icon-moon"></i>
     </a>
 
     <div itemscope itemtype="https://schema.org/Person">
@@ -88,11 +88,11 @@
     </div>
 
     <footer class="cv-footer no-print">
-        <span style="float:left">
+        <span class="cv-footer-left">
             Site designed by
             <a href="https://github.com/dlshriver/dlshriver.github.io">David Shriver</a>.
         </span>
-        <span style="float:right">
+        <span class="cv-footer-right">
             <a href="/sitemap.xml">Sitemap</a>
         </span>
     </footer>
@@ -105,7 +105,7 @@
             r.style.setProperty('--primary-color', '#40826D');
             r.style.setProperty('--secondary-color', 'white');
             r.style.setProperty('--text-color', 'white');
-            r.style.setProperty('--background-color', 'black');
+            r.style.setProperty('--background-color', '#121212');
             r.style.setProperty('--invert-filter', 'invert(1)');
             document.querySelector('#toggle-dark').style.display = "none";
             document.querySelector('#toggle-light').style.display = "inline-block";

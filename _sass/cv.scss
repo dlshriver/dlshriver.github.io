@@ -1,3 +1,7 @@
+.cv-author {
+    font-weight: 900;
+}
+
 .cv-header {
     padding: 1em 0 0 0;
 
@@ -17,7 +21,7 @@
     }
 
     .title-bar {
-        @include section_border;
+        @include section-border;
         padding: 0.3rem 0 0 0;
         font-size: 0.85rem;
         text-align: center;
@@ -43,7 +47,7 @@
 }
 
 .section-header {
-    @include section_border;
+    @include section-border;
 
     h2 {
         font-size: 1.25rem;
@@ -74,6 +78,14 @@
     padding-top: 1rem;
     text-align: center;
     margin-bottom: 2rem;
+
+    .cv-footer-left {
+        float: left;
+    }
+
+    .cv-footer-right {
+        float: right;
+    }
 }
 
 .print-only {

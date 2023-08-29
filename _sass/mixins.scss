@@ -4,7 +4,7 @@
     border-radius: $radius;
 }
 
-@mixin section_border {
+@mixin section-border {
     border-top: 3px solid var(--text-color);
     border-bottom: 2px solid var(--text-color);
     padding: .2rem 0 .2rem 0;

@@ -11,12 +11,10 @@
         <div class="cv-item-details">
             {%- for author in publication.author %}
             {%- if author == site.data.profile.name %}
-            <b>
-                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <span itemprop="name">{{author}}</span>{% unless forloop.last %},{% endunless %}
-                    <meta itemprop="url" content="{{site.url}}">
-                </span>
-            </b>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name" class="cv-author">{{author}}</span>{% unless forloop.last %},{% endunless %}
+                <meta itemprop="url" content="{{site.url}}">
+            </span>
             {%- else %}
             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
                 <span itemprop="name">{{author}}</span>{% unless forloop.last %},{% endunless %}

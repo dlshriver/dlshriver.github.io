@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dlshriver
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dlshriver.com
+  * I am dlshriver (https://keybase.io/dlshriver) on keybase.
+  * I have a public key ASDloxgY_7_bc-o15GC9d2myguKYY34a8k9nXk-X5lgUnQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207a1cb9a6aab47a6543f94c0073a178dcee185208e894fb2d51f8ebda77485a810a",
+      "host": "keybase.io",
+      "kid": "0120e5a31818ffbfdb73ea35e460bd7769b282e298637e1af24f675e4f97e658149d0a",
+      "uid": "4178d8379f9464bffb79858fa34dab19",
+      "username": "dlshriver"
+    },
+    "merkle_root": {
+      "ctime": 1693350662,
+      "hash": "dff7bb9b64f6131e19881de70373378adb770844799873ab81b3c90e36277039674854ec1e99744223b6fbc9e088a695acb7aa841ac45c58b7813b03762d1e6c",
+      "hash_meta": "9a0fbd749b01f7ec98696b0d53b6b26aad396a770a8e88380afb9d8bab388b2f",
+      "seqno": 24865826
+    },
+    "service": {
+      "entropy": "87TuxvzYqwDiIwyDDT+47sLm",
+      "hostname": "dlshriver.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.1"
+  },
+  "ctime": 1693350720,
+  "expire_in": 504576000,
+  "prev": "7122d8410c50792c457bca2fdeca3bc99c4c87554819b25cd414ae5f2ee1271d",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg5aMYGP+/23PqNeRgvXdpsoLimGN+GvJPZ15Pl+ZYFJ0Kp3BheWxvYWTESpcCF8QgcSLYQQxQeSxFe8ov3so7yZxMh1VIGbJc1BSuXy7hJx3EIHgf3QHpuwD72/opqpfNAKf4trSw82RFFF7QSleMtO6/AgHCo3NpZ8RAU3vcKyhtc2DMkQCZhUSMeDjwWB/v9IhdR2EfUNoKBELH6PNQg/dFiguNSc9SqEnzHbka603a4/VTUmJRUtpqBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFYCsgmLFRNb/tpqtglXxVs27eztHU1eht3ZDm4MlJxxo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dlshriver
+
+==================================================================

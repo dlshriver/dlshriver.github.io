@@ -33,6 +33,9 @@ defaults:
 plugins:
   - jekyll-sitemap
 
+include:
+  - .well-known
+
 exclude:
   - CHANGELOG
   - CNAME

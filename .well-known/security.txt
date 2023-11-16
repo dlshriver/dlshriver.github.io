@@ -1,0 +1,24 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:davidshriver+dlshriver.com|security@outlook.com
+Expires: 2025-01-01T04:59:00.000Z
+Encryption: https://keybase.io/dlshriver/pgp_keys.asc?fingerprint=19a7914d88fe96f52cd7658d64e0d554a61a1040
+Preferred-Languages: en
+Canonical: https://dlshriver.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCAAQBQJlVXrLCRBk4NVUphoQQAAA3wIQABoKYteM6zETQtn3vdJzosYC
+AGScUEkIIja1dEnBNZXxJiBrwzGLeS6K4xJhfG9YB4YWClpU4/7aPJwuRx5xm2kf
+9JnGsspaXhJ0o+7mSiXaVf/SfvImptEsADhL/BaCSmNUg3rEosGN495fnjN1L+2V
+tsbwmIFAKGbqE+LmICRb6bOwW3k0DoKIdbZw8G0PxU4oMkFeWfx7JDEmkxB1bUlr
+irTHCc7wAa1QqSYrdGWtdNLgOnW81wZrB3zCBNZELN4nXV0X7yOu5oop1xKRzd7N
+vTOTFhqwgljA1hvN1esAnvZkF02lnF5bHU4hTnfmMduf8RuuRjUC5hPknOCdSqcN
+bynZHTA0oYoEq+Nhi3HmOQQCQg8qWGs/KhvAoeE4qlHS1LAbtlRRYZnMkmy+/Aaw
+ZtAipKBS6KyZVa+dP2alxhAr02iX7qeJatNh1cYVBgZCSkc25fdiHp3jxxlDhWGc
+m4SI0kRWUeetE36aAJSOp+GGXmS2H4Z7oJYoFk93twHaB6SiM+rZRRmoG58sQYyC
+hRciZpWDIh88b20XvlwlLGiifxTIvjjgufnSoKIIGN8ZmhMAAj8u88xEI/DBnhOT
+ac5B+KGXyrVrRIv13eQ/av2UReA0i7VSxACHODEyeLmht8GI/sLQ7TiAo5kNA57x
+95x0ME6a4CsOsheotPVc
+=pm+e
+-----END PGP SIGNATURE-----

@@ -26,6 +26,12 @@
             {{ education.advisor | join: " and " }}
         </div>
         {% endif %}
+        {% if education.thesis %}
+        <br>
+        <div class="cv-item-details">
+            Thesis: <em>{{ education.thesis }}</em>
+        </div>
+        {% endif %}
     </div>
     {% endfor %}
 </section>

@@ -31,11 +31,13 @@ education:
     advisor:
       - Matt Dwyer
       - Sebastian Elbaum
+    thesis: Increasing the Applicability of Verification Tools for Neural Networks
   - degree: M.S., Computer Science
     date: May 2018
     school: University of Nebraska-Lincoln
     advisor:
       - Sebastian Elbaum
+    thesis: Assessing the Quality and Stability of Recommender Systems
   - degree: B.S., Computer Engineering
     date: May 2016
     school: University of Nebraska-Lincoln
@@ -43,15 +45,15 @@ positions:
   - employer: Software Engineering Institute (SEI)
     title: Machine Learning Research Scientist
     duration: "January 2023 &mdash; Present"
-    description: "Work on projects to advance, establish, and promote the discipline of AI Engineering."
+    description: "Leads small teams of researchers, engineers, and software developers on projects in the Secure AI Lab on topics related to identifying, understanding, and defending against AI model vulnerabilities."
   - employer: Department of Computer Science, University of Virginia
     title: Research Assistant
     duration: "August 2018 &mdash; December 2022"
-    description: "Researching and developing techniques for increasing the applicability of state-of-the art verification tools for neural networks to improve the safety and correctness of systems with high costs of failure, such as autonomous vehicles."
+    description: "Performed research on techniques for increasing the applicability of state-of-the art formal verification tools for neural networks to improve the safety and correctness of systems with high costs of failure, such as autonomous vehicles."
   - employer: Langley Research Center, NASA
     title: Research Intern
     duration: "June 2021 &mdash; August 2021"
-    description: "Developed an approach to transform temporal behavioral properties of neural networks to local robustness properties to enable application of a plethora of available tools and investigated the feasibility of this transformation in the context of neural networks trained for aircraft collision avoidance."
+    description: "Proposed and led a short term project to develop a method for transforming temporal behavioral properties of neural networks to local robustness properties to enable application of a plethora of available tools and investigated the feasibility of this transformation in the context of neural networks trained for aircraft collision avoidance."
   - employer: Department of Computer Science and Engineering, University of Nebraska-Lincoln
     title: Research Assistant
     duration: "March 2014 &mdash; July 2018"
@@ -67,6 +69,7 @@ awards:
     date: May 2016
 service:
   - "ICSE 2025: Program Committee Member"
+  - "TOSEM 2024: Reviewer"
   - "TOSEM 2023: Reviewer"
   - "ASE 2022: Committee Member in Program Committee within Artifact Evaluation-track"
   - "ISSTA 2021: Committee Member in Artifact Evaluation Committee within the Artifact Evaluation-track"

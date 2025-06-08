@@ -53,7 +53,7 @@ positions:
   - employer: Langley Research Center, NASA
     title: Research Intern
     duration: "June 2021 &mdash; August 2021"
-    description: "Proposed and led a short term project to develop a method for transforming temporal behavioral properties of neural networks to local robustness properties to enable application of a plethora of available tools and investigated the feasibility of this transformation in the context of neural networks trained for aircraft collision avoidance."
+    description: "Proposed and led a short-term project to develop a method for transforming temporal behavioral properties of neural networks to local robustness properties to enable application of a plethora of available tools and investigated the feasibility of this transformation in the context of neural networks trained for aircraft collision avoidance."
   - employer: Department of Computer Science and Engineering, University of Nebraska-Lincoln
     title: Research Assistant
     duration: "March 2014 &mdash; July 2018"

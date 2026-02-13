@@ -1,3 +1,5 @@
+@use "mixins";
+
 .cv-author {
     font-weight: 900;
 }
@@ -9,7 +11,7 @@
         width: 150px;
         max-width: 100%;
         overflow: hidden;
-        @include border-radius(150px);
+        @include mixins.border-radius(150px);
         margin: 0 auto;
         display: block;
     }
@@ -21,7 +23,7 @@
     }
 
     .title-bar {
-        @include section-border;
+        @include mixins.section-border;
         padding: 0.3rem 0 0 0;
         font-size: 0.85rem;
         text-align: center;
@@ -47,7 +49,7 @@
 }
 
 .section-header {
-    @include section-border;
+    @include mixins.section-border;
 
     h2 {
         font-size: 1.25rem;

@@ -1,9 +1,9 @@
-@import "variables";
-@import "fonts";
+@forward "variables";
+@forward "fonts";
 
-@import "base";
-@import "mixins";
+@forward "base";
+@forward "mixins";
 
-@import "cv";
+@forward "icons";
 
-@import "icons";
+@forward "cv";

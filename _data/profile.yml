@@ -3,19 +3,23 @@ email: "davidshriver@outlook.com"
 address: "Pittsburgh, PA, USA"
 position: "Research Scientist"
 affiliation: "Software Engineering Institute"
-description: "Machine learning research scientist in the AI Division of the Software Engineering Institute (SEI) at Carnegie Mellon University (CMU), interested in safe and reliable AI."
-bio: "<span class='no-print'>I am a machine learning research scientist in the AI Division of the Software Engineering Institute (SEI) at Carnegie Mellon University (CMU).</span> My research interests are in ensuring correctness of machine learning systems. In particular, I am interested in *analysis, testing, and verification of neural networks*, especially in the context of systems with a high cost of failure, such as safety-critical and autonomous systems."
+description: "Researcher of safe, secure, and reliable artificial intelligence (AI)."
+bio: "<span class='no-print'></span> I work to make machine learning systems safer and more reliable, especially in applications where failures can have serious consequences, such as autonomous vehicles or safety-critical systems. My research develops practical tools and techniques for analyzing, verifying, and fixing neural networks, ensuring failures are caught and remediated before they can have a significant impact."
 keywords:
   - research
-  - publications
   - neural networks
   - machine learning
+  - artificial intelligence
+  - safety
+  - security
+  - reliability
   - verification
   - falsification
   - software engineering
+  - publications
   - python
 # available:
-#   - "I'm on the job market!"
+#   - "I'm open to collaborations!"
 # cv: assets/files/cv.pdf # link/path to downloadable CV
 social:
   docker-username: "dlshriver"
@@ -44,8 +48,8 @@ education:
 positions:
   - employer: Software Engineering Institute (SEI)
     title: Machine Learning Research Scientist
-    duration: "January 2023 &mdash; Present"
-    description: "Leads small teams of researchers, engineers, and software developers on projects in the Secure AI Lab on topics related to identifying, understanding, and defending against AI model vulnerabilities."
+    duration: "January 2023 &mdash; February 2026"
+    description: "Leads teams of researchers, engineers, and software developers on projects in the Secure AI Lab on topics related to identifying, understanding, and defending against AI model vulnerabilities."
   - employer: Department of Computer Science, University of Virginia
     title: Research Assistant
     duration: "August 2018 &mdash; December 2022"
@@ -59,6 +63,8 @@ positions:
     duration: "March 2014 &mdash; July 2018"
     description: "Developed approaches for assessing the quality and stability of recommender systems."
 awards:
+  - award: "Software Engineering Institute AJ Award for Leading and Advancing (Team award)"
+    date: June 2025
   - award: "ACM SIGSOFT Outstanding Doctoral Dissertation"
     date: March 2023
   - award: "John A. Stankovic Outstanding Graduate Research"
@@ -68,6 +74,7 @@ awards:
   - award: "University of Nebraska-Lincoln, Computer Engineering Outstanding Undergraduate Senior"
     date: May 2016
 service:
+  - "ICSE 2026: Program Committee Member"
   - "ICSE 2025: Program Committee Member"
   - "TOSEM 2024: Reviewer"
   - "TOSEM 2023: Reviewer"
